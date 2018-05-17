@@ -7,6 +7,14 @@ html
     meta(name="viewport" content="width=device-width, initial-scale=1")
   body
     block header
+      nav.nav(id='nav')
+        a(href='/') Montaigne
+        a(href='/skillset') Skillset
+        a(href='/achievements') Achievements
+        a(href='/our_story') Our Story
+        a(href='/working_with_us') Working With Us
+        a(href='/get_in_touch') Get In Touch
+        a.icon(href='javascript:void(0)')!= h.icon('baseline-menu-24px')
 
     block messages
 
@@ -14,5 +22,5 @@ html
       block content
 
     block scripts
-      script(src=`https://maps.googleapis.com/maps/api/js?key=${process.env.MAP_KEY}&libraries=places`)
+      //- script(src=`https://maps.googleapis.com/maps/api/js?key=${process.env.MAP_KEY}&libraries=places`)
       script(src="/dist/App.bundle.js")
