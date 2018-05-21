@@ -10,6 +10,63 @@
       width: 60%;
     }
   }
+  .team {
+    background-color: papayawhip;
+    height: 800px;
+    display: flex;
+    &--slider {
+      width: 320px;
+      height: 100%;
+      overflow-y: scroll;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .member-image {
+        height: 700px;
+        width: 300px;
+        margin: 0.5em 0.2em;
+      }
+    }
+    &--info {
+      width: calc(100% - 320px);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: right;
+      padding: 0 0.5em;
+      .header {
+        font-size: 2em;
+        font-weight: 700;
+        margin-bottom: 3em;
+      }
+      .first-name, .last-name {
+        padding: 0;
+        margin: 0;
+        font-size: 3em;
+        font-weight: 700;
+      }
+      .first-name {
+        color: #6997EB;
+      }
+      .designation {
+        font-size: 2em;
+        font-weight: 300;
+      }
+      .details {
+        width: 70%;
+        font-size: 1.3em;
+      }
+      .member--social {
+        display: flex;
+        a {
+          text-decoration: none;
+          color: #6997EB;
+          font-size: 1.3em;
+          margin-left: 0.5em;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 750px) {
