@@ -1,0 +1,25 @@
+.our_story {
+  padding: 2em;
+  .top_section {
+    box-shadow: inset 0px 5px 10px 2px rgba(0,0,0,0.45);
+    height: 450px;
+    background: url('/images/photos/our-story-bg.jpg') center center;
+    background-size: cover;
+    padding: 2em 0 0 2em;
+    &-text {
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .our_story {
+    .top_section {
+      height: auto;
+      padding: 5px;
+      &-text {
+        width: 100%;
+      }
+    }
+  }
+}

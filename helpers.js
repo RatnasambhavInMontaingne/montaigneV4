@@ -79,3 +79,54 @@ exports.posts = [
     title: 'Lorem Ipsum Appears Everywhere'
   }
 ]
+
+exports.teamMembers = [
+  {
+    name: 'Jhon Wick',
+    designation: 'Developer',
+    details: 'Lorem ipsum dolor sit amet, his id verterem volutpat, viderer oporteat cu his. Ea his quod dicta. Vix molestie electram id. Cu sed bonorum verterem sadipscing, ad novum timeam ceteros nam. Eius mediocritatem ne est, etiam nemore detraxit te per. Ne qui dicunt doctus scaevola, summo apeirian ius et.',
+    image: 'https://source.unsplash.com/random'
+  },
+  {
+    name: 'Jhon Wick',
+    designation: 'Developer',
+    details: 'Lorem ipsum dolor sit amet, his id verterem volutpat, viderer oporteat cu his. Ea his quod dicta. Vix molestie electram id. Cu sed bonorum verterem sadipscing, ad novum timeam ceteros nam. Eius mediocritatem ne est, etiam nemore detraxit te per. Ne qui dicunt doctus scaevola, summo apeirian ius et.',
+    image: 'https://source.unsplash.com/random'
+  },
+  {
+    name: 'Jhon Wick',
+    designation: 'Developer',
+    details: 'Lorem ipsum dolor sit amet, his id verterem volutpat, viderer oporteat cu his. Ea his quod dicta. Vix molestie electram id. Cu sed bonorum verterem sadipscing, ad novum timeam ceteros nam. Eius mediocritatem ne est, etiam nemore detraxit te per. Ne qui dicunt doctus scaevola, summo apeirian ius et.',
+    image: 'https://source.unsplash.com/random'
+  },
+  {
+    name: 'Jhon Wick',
+    designation: 'Developer',
+    details: 'Lorem ipsum dolor sit amet, his id verterem volutpat, viderer oporteat cu his. Ea his quod dicta. Vix molestie electram id. Cu sed bonorum verterem sadipscing, ad novum timeam ceteros nam. Eius mediocritatem ne est, etiam nemore detraxit te per. Ne qui dicunt doctus scaevola, summo apeirian ius et.',
+    image: 'https://source.unsplash.com/random'
+  },
+  {
+    name: 'Jhon Wick',
+    designation: 'Developer',
+    details: 'Lorem ipsum dolor sit amet, his id verterem volutpat, viderer oporteat cu his. Ea his quod dicta. Vix molestie electram id. Cu sed bonorum verterem sadipscing, ad novum timeam ceteros nam. Eius mediocritatem ne est, etiam nemore detraxit te per. Ne qui dicunt doctus scaevola, summo apeirian ius et.',
+    image: 'https://source.unsplash.com/random'
+  },
+  {
+    name: 'Jhon Wick',
+    designation: 'Developer',
+    details: 'Lorem ipsum dolor sit amet, his id verterem volutpat, viderer oporteat cu his. Ea his quod dicta. Vix molestie electram id. Cu sed bonorum verterem sadipscing, ad novum timeam ceteros nam. Eius mediocritatem ne est, etiam nemore detraxit te per. Ne qui dicunt doctus scaevola, summo apeirian ius et.',
+    image: 'https://source.unsplash.com/random'
+  },
+  {
+    name: 'Jhon Wick',
+    designation: 'Developer',
+    details: 'Lorem ipsum dolor sit amet, his id verterem volutpat, viderer oporteat cu his. Ea his quod dicta. Vix molestie electram id. Cu sed bonorum verterem sadipscing, ad novum timeam ceteros nam. Eius mediocritatem ne est, etiam nemore detraxit te per. Ne qui dicunt doctus scaevola, summo apeirian ius et.',
+    image: 'https://source.unsplash.com/random'
+  },
+  {
+    name: 'Jhon Wick',
+    designation: 'Developer',
+    details: 'Lorem ipsum dolor sit amet, his id verterem volutpat, viderer oporteat cu his. Ea his quod dicta. Vix molestie electram id. Cu sed bonorum verterem sadipscing, ad novum timeam ceteros nam. Eius mediocritatem ne est, etiam nemore detraxit te per. Ne qui dicunt doctus scaevola, summo apeirian ius et.',
+    image: 'https://source.unsplash.com/random'
+  }
+]
