@@ -1,0 +1,61 @@
+extends layout
+include mixins/social
+include mixins/blogItem
+
+block content
+  .get_in_touch
+    iframe.map(src="https://maps.google.com/maps?q=Montaigne Smart&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0")
+    .contact_and_form_wrapper
+      .contact
+        .contact-email
+          p.header Email & Website
+          p rohith@montaigne.co
+          p info@montaigne.co
+          p www.montiagne.co
+        .horizontal_line
+        .contact-address
+          p.header Address
+          p Plot No. 39, Megha Hills, Madhapur,
+          p Andra Basti, Sri Sai Nagar, Madhapur,
+          p Hyderabad, Telangana, 500081.
+        .horizontal_line
+        .contact-contact
+          p.header Contact
+          p +9140-123023328
+          p +91-92883913121
+      .verticle_line
+      form.form
+        .form--section
+          input(type='text' name='name' id='name' placeholder='Enter Your Name' required)
+          input(type='text' name='number' id='number' placeholder='Enter Your Contact Number' required)
+        .form--section
+          input(type='text' name='organisation' id='organisation' placeholder='Enter Your Organissation' required)
+          input(type='email' name='email' id='email' placeholder='Enter Your Email' required)
+        .form--section.form--section-center
+          select(name='subject' id='subject' placeholder='Select Your Subject' required)
+            option(default) Select an option 🔽
+            option(value='Incubation') Incubation
+            option(value='Creative Designing') Creative Designing
+            option(value='UI/UX') UI/UX
+            option(value='Marketing') Marketing
+            option(value='Predictive Analytics') Predictive Analytics
+            option(value='Other') Other
+        .form--section.form--section-center
+          textarea(rows='5' cols='35' placeholder='Enter your message')
+        .form--section.form--section-center
+          input(type='submit' value='Submit')
+    .blog_and_newsletter_wrapper
+      .blog
+        each post in h.posts
+          +blogItem(post)
+      form.newsletter
+        p Subscribe to us
+        input(type='email' name='newsletter_email' id='newsletter_email' required placeholder='Enter Your Email')
+        input(type='submit' value='Submit')
+      .vertical_line
+      .footer
+        p Designed and developed by
+        img(src='images/photos/logo 512X512 black.png' alt='Montaigne')
+        p labs
+  .social_wrapper
+    +social()

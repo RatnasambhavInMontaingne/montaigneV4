@@ -27,3 +27,55 @@ exports.menu = [
   { slug: '/add', title: 'Add', icon: 'add', },
   { slug: '/map', title: 'Map', icon: 'map', },
 ];
+
+
+exports.sections = [
+  {
+    id: 'incubation',
+    header: 'Incubation',
+    p1: 'Lorem ipsum dolor sit amet, his id verterem volutpat, viderer oporteat cu his. Ea his quod dicta. Vix molestie electram id. Cu sed bonorum verterem sadipscing, ad novum timeam ceteros nam. Eius mediocritatem ne est, etiam nemore detraxit te per. Ne qui dicunt doctus scaevola, summo apeirian ius et.',
+    p2: 'Ea debitis facilisis disputationi vim, id eam numquam dolorem appetere, qui duis tota labores ne. Qui persecuti rationibus sadipscing eu, odio dolores lobortis mel ut, ius te dicam aliquid deserunt. Mandamus omittantur quo cu, duo inani fabulas luptatum in, eum ut dicam urbanitas. Sit apeirian dissentias complectitur eu, ad ipsum ludus indoctum nec.'
+  },
+  {
+    id: 'creative_designing',
+    header: 'Creative Designing',
+    p1: 'Lorem ipsum dolor sit amet, his id verterem volutpat, viderer oporteat cu his. Ea his quod dicta. Vix molestie electram id. Cu sed bonorum verterem sadipscing, ad novum timeam ceteros nam. Eius mediocritatem ne est, etiam nemore detraxit te per. Ne qui dicunt doctus scaevola, summo apeirian ius et.',
+    p2: 'Ea debitis facilisis disputationi vim, id eam numquam dolorem appetere, qui duis tota labores ne. Qui persecuti rationibus sadipscing eu, odio dolores lobortis mel ut, ius te dicam aliquid deserunt. Mandamus omittantur quo cu, duo inani fabulas luptatum in, eum ut dicam urbanitas. Sit apeirian dissentias complectitur eu, ad ipsum ludus indoctum nec.'
+  },
+  {
+    id: 'marketing',
+    header: 'Marketing',
+    p1: 'Lorem ipsum dolor sit amet, his id verterem volutpat, viderer oporteat cu his. Ea his quod dicta. Vix molestie electram id. Cu sed bonorum verterem sadipscing, ad novum timeam ceteros nam. Eius mediocritatem ne est, etiam nemore detraxit te per. Ne qui dicunt doctus scaevola, summo apeirian ius et.',
+    p2: 'Ea debitis facilisis disputationi vim, id eam numquam dolorem appetere, qui duis tota labores ne. Qui persecuti rationibus sadipscing eu, odio dolores lobortis mel ut, ius te dicam aliquid deserunt. Mandamus omittantur quo cu, duo inani fabulas luptatum in, eum ut dicam urbanitas. Sit apeirian dissentias complectitur eu, ad ipsum ludus indoctum nec.'
+  },
+  {
+    id: 'ui_ux',
+    header: 'UI/UX',
+    p1: 'Lorem ipsum dolor sit amet, his id verterem volutpat, viderer oporteat cu his. Ea his quod dicta. Vix molestie electram id. Cu sed bonorum verterem sadipscing, ad novum timeam ceteros nam. Eius mediocritatem ne est, etiam nemore detraxit te per. Ne qui dicunt doctus scaevola, summo apeirian ius et.',
+    p2: 'Ea debitis facilisis disputationi vim, id eam numquam dolorem appetere, qui duis tota labores ne. Qui persecuti rationibus sadipscing eu, odio dolores lobortis mel ut, ius te dicam aliquid deserunt. Mandamus omittantur quo cu, duo inani fabulas luptatum in, eum ut dicam urbanitas. Sit apeirian dissentias complectitur eu, ad ipsum ludus indoctum nec.'
+  },
+  {
+    id: 'predictive_analytics',
+    header: 'Predictive Analytics',
+    p1: 'Lorem ipsum dolor sit amet, his id verterem volutpat, viderer oporteat cu his. Ea his quod dicta. Vix molestie electram id. Cu sed bonorum verterem sadipscing, ad novum timeam ceteros nam. Eius mediocritatem ne est, etiam nemore detraxit te per. Ne qui dicunt doctus scaevola, summo apeirian ius et.',
+    p2: 'Ea debitis facilisis disputationi vim, id eam numquam dolorem appetere, qui duis tota labores ne. Qui persecuti rationibus sadipscing eu, odio dolores lobortis mel ut, ius te dicam aliquid deserunt. Mandamus omittantur quo cu, duo inani fabulas luptatum in, eum ut dicam urbanitas. Sit apeirian dissentias complectitur eu, ad ipsum ludus indoctum nec.'
+  }
+]
+
+exports.posts = [
+  {
+    image: 'https://source.unsplash.com/random',
+    url: '#',
+    title: 'Lorem Ipsum In The Wild'
+  },
+  {
+    image: 'https://source.unsplash.com/random',
+    url: '#',
+    title: 'Lorem Ipsum Burning In The Sky'
+  },
+  {
+    image: 'https://source.unsplash.com/random',
+    url: '#',
+    title: 'Lorem Ipsum Appears Everywhere'
+  }
+]

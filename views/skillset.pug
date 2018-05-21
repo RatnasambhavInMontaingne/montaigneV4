@@ -1,0 +1,24 @@
+extends layout
+include mixins/social
+include mixins/skillsetSection
+
+block content
+  .skillset
+    .top
+      a.top-item.active(href='#incubation') Incubation
+      a.top-item(href='#creative_designing') Creative Designing
+      a.top-item(href='#marketing') Marketing
+      a.top-item(href='#ui_ux') UI/UX
+      a.top-item(href='#predictive_analytics') Predictive Analytics
+    .right
+      for section in h.sections
+        +skillsetSection(section)
+    .left
+      a.left-item.active(href='#incubation') Incubation
+      a.left-item(href='#creative_designing') Creative Designing
+      a.left-item(href='#marketing') Marketing
+      a.left-item(href='#ui_ux') UI/UX
+      a.left-item(href='#predictive_analytics') Predictive Analytics
+      button.expert Talk to an Expert
+      +social
+    button.bottom.expert Talk to an Expert

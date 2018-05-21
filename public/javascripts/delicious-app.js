@@ -25,3 +25,12 @@ const typedOptions = {
 }
 
 const typed = new Typed('.typed-element', typedOptions);
+
+$$('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        $(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

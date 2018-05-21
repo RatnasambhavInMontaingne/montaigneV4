@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -98,54 +98,6 @@ exports.$$ = $$;
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-__webpack_require__(1);
-
-var _bling = __webpack_require__(0);
-
-var _typed = __webpack_require__(9);
-
-var _typed2 = _interopRequireDefault(_typed);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-(0, _bling.$)('#nav').addEventListener('click', navbar);
-
-function navbar() {
-    var x = (0, _bling.$)('#nav');
-    if (x.className === 'nav') {
-        x.className += ' responsive';
-    } else {
-        x.className = 'nav';
-    }
-}
-
-var typedOptions = {
-    typeSpeed: 40,
-    strings: ['One Stop Shop For All Your Business Needs', 'Lorem Ipsum Lorem Ipsum Lorem Ipsum', 'One Stop Shop For All Your Business Needs'],
-    loop: true
-};
-
-var typed = new _typed2.default('.typed-element', typedOptions);
-
-/***/ }),
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1238,10 +1190,16 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 	);
 });
 ;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)(module)))
 
 /***/ }),
-/* 10 */
+/* 2 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1269,6 +1227,51 @@ module.exports = function (module) {
 	}
 	return module;
 };
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(2);
+
+var _bling = __webpack_require__(0);
+
+var _typed = __webpack_require__(1);
+
+var _typed2 = _interopRequireDefault(_typed);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(0, _bling.$)('#nav').addEventListener('click', navbar);
+
+function navbar() {
+    var x = (0, _bling.$)('#nav');
+    if (x.className === 'nav') {
+        x.className += ' responsive';
+    } else {
+        x.className = 'nav';
+    }
+}
+
+var typedOptions = {
+    typeSpeed: 40,
+    strings: ['One Stop Shop For All Your Business Needs', 'Lorem Ipsum Lorem Ipsum Lorem Ipsum', 'One Stop Shop For All Your Business Needs'],
+    loop: true
+};
+
+var typed = new _typed2.default('.typed-element', typedOptions);
+
+(0, _bling.$$)('a[href^="#"]').forEach(function (anchor) {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        (0, _bling.$)(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
 /***/ })
 /******/ ]);
