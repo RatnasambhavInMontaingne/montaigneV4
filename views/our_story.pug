@@ -25,10 +25,13 @@ block content
               a(href='#')!= h.icon('twitter')
               a(href='#')!= h.icon('instagram')
       .team--slider
-          .member-image.active(id='member-1-image')
-          .member-image(id='member-2-image')
-          .member-image(id='member-3-image')
-          .member-image(id='member-4-image')
-          .member-image(id='member-5-image')
-          .member-image(id='member-6-image')
-          .member-image(id='member-7-image')
+          .member-image.active(id='member-1-image' onclick="changeMember('#member-1-image', 0)")
+          .member-image(id='member-2-image' onclick="changeMember('#member-2-image', 1)")
+          .member-image(id='member-3-image' onclick="changeMember('#member-3-image', 2)")
+          .member-image(id='member-4-image' onclick="changeMember('#member-4-image', 3)")
+          .member-image(id='member-5-image' onclick="changeMember('#member-5-image', 4)")
+          .member-image(id='member-6-image' onclick="changeMember('#member-6-image', 5)")
+          .member-image(id='member-7-image' onclick="changeMember('#member-7-image', 6)")
+
+  script
+    include mixins/changeMember.js
