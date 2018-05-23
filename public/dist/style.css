@@ -671,7 +671,9 @@ template {
 .our_story {
   padding: 2em; }
   .our_story .top_section {
+    box-shadow: inset 0px 5px 10px 2px rgba(0, 0, 0, 0.45);
     height: 450px;
+    background: url("/images/photos/our-story-bg.jpg") center center;
     background-size: cover;
     padding: 2em 0 0 2em; }
     .our_story .top_section-text {
@@ -752,9 +754,13 @@ template {
       -ms-flex-align: center;
           align-items: center; }
       .our_story .team--slider .member-image {
-        height: 400px;
-        width: 300px;
-        margin: 0 1em; }
+        min-height: 400px;
+        min-width: 300px;
+        margin: 0 1em;
+        background: url("/images/photos/placeholder.png") center center;
+        background-size: cover; }
+      .our_story .team--slider .member-image.active {
+        border: 10px solid gold; }
       .our_story .team--slider .member-1 {
         margin-left: 0; }
 

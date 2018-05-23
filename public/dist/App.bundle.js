@@ -1262,7 +1262,9 @@ var typedOptions = {
     loop: true
 };
 
-var typed = new _typed2.default('.typed-element', typedOptions);
+if ((0, _bling.$)('.typed-element')) {
+    var typed = new _typed2.default('.typed-element', typedOptions);
+}
 
 (0, _bling.$$)('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
@@ -1272,6 +1274,173 @@ var typed = new _typed2.default('.typed-element', typedOptions);
         });
     });
 });
+
+var animationEnd = function (el) {
+    var animations = {
+        animation: 'animationend',
+        OAnimation: 'oAnimationEnd',
+        MozAnimation: 'mozAnimationEnd',
+        WebkitAnimation: 'webkitAnimationEnd'
+    };
+
+    for (var t in animations) {
+        if (el.style[t] !== undefined) {
+            return animations[t];
+        }
+    }
+}(document.createElement('div'));
+
+var memberDetails = [{
+    firstName: 'Ratnasambhav',
+    lastName: 'Priyadarshi',
+    designation: 'Developer',
+    details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate, impedit, repudiandae, accusamus officiis officia unde error necessitatibus beatae dignissimos temporibus laudantium tempore autem reprehenderit ipsa nisi labore expedita mollitia?',
+    social: [{
+        icon: 'github',
+        href: '#'
+    }, {
+        icon: 'linkedin',
+        href: '#'
+    }, {
+        icon: 'twitter',
+        href: '#'
+    }, {
+        icon: 'instagram',
+        href: '#'
+    }]
+}, {
+    firstName: 'Jhon',
+    lastName: 'Wick',
+    designation: 'Developer',
+    details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate, impedit, repudiandae, accusamus officiis officia unde error necessitatibus beatae dignissimos temporibus laudantium tempore autem reprehenderit ipsa nisi labore expedita mollitia?',
+    social: [{
+        icon: 'github',
+        href: '#'
+    }, {
+        icon: 'linkedin',
+        href: '#'
+    }, {
+        icon: 'twitter',
+        href: '#'
+    }, {
+        icon: 'instagram',
+        href: '#'
+    }]
+}, {
+    firstName: 'Jhon',
+    lastName: 'HHHJJJJKKKK',
+    designation: 'ASDFGH',
+    details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate, impedit, repudiandae, accusamus officiis officia unde error necessitatibus beatae dignissimos temporibus laudantium tempore autem reprehenderit ipsa nisi labore expedita mollitia?',
+    social: [{
+        icon: 'github',
+        href: '#'
+    }, {
+        icon: 'linkedin',
+        href: '#'
+    }, {
+        icon: 'twitter',
+        href: '#'
+    }, {
+        icon: 'instagram',
+        href: '#'
+    }]
+}, {
+    firstName: 'Jhon',
+    lastName: 'HHHJJJJKKKK',
+    designation: 'ASDFGH',
+    details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate, impedit, repudiandae, accusamus officiis officia unde error necessitatibus beatae dignissimos temporibus laudantium tempore autem reprehenderit ipsa nisi labore expedita mollitia?',
+    social: [{
+        icon: 'github',
+        href: '#'
+    }, {
+        icon: 'linkedin',
+        href: '#'
+    }, {
+        icon: 'twitter',
+        href: '#'
+    }, {
+        icon: 'instagram',
+        href: '#'
+    }]
+}, {
+    firstName: 'Jhon',
+    lastName: 'HHHJJJJKKKK',
+    designation: 'ASDFGH',
+    details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate, impedit, repudiandae, accusamus officiis officia unde error necessitatibus beatae dignissimos temporibus laudantium tempore autem reprehenderit ipsa nisi labore expedita mollitia?',
+    social: [{
+        icon: 'github',
+        href: '#'
+    }, {
+        icon: 'linkedin',
+        href: '#'
+    }, {
+        icon: 'twitter',
+        href: '#'
+    }, {
+        icon: 'instagram',
+        href: '#'
+    }]
+}, {
+    firstName: 'Jhon',
+    lastName: 'HHHJJJJKKKK',
+    designation: 'ASDFGH',
+    details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate, impedit, repudiandae, accusamus officiis officia unde error necessitatibus beatae dignissimos temporibus laudantium tempore autem reprehenderit ipsa nisi labore expedita mollitia?',
+    social: [{
+        icon: 'github',
+        href: '#'
+    }, {
+        icon: 'linkedin',
+        href: '#'
+    }, {
+        icon: 'twitter',
+        href: '#'
+    }, {
+        icon: 'instagram',
+        href: '#'
+    }]
+}, {
+    firstName: 'Jhon',
+    lastName: 'HHHJJJJKKKK',
+    designation: 'ASDFGH',
+    details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate, impedit, repudiandae, accusamus officiis officia unde error necessitatibus beatae dignissimos temporibus laudantium tempore autem reprehenderit ipsa nisi labore expedita mollitia?',
+    social: [{
+        icon: 'github',
+        href: '#'
+    }, {
+        icon: 'linkedin',
+        href: '#'
+    }, {
+        icon: 'twitter',
+        href: '#'
+    }, {
+        icon: 'instagram',
+        href: '#'
+    }]
+}];
+
+var changeMember = function changeMember(image, index) {
+    (0, _bling.$)('.member-image.active').classList.remove('active');
+    (0, _bling.$)(image).classList.add('active');
+    var body = (0, _bling.$)('.team--info-body');
+    body.classList.add('fadeOut');
+    var memberDetail = memberDetails[index];
+    setTimeout(function () {
+        (0, _bling.$)('.first-name').innerHTML = memberDetail.firstName;
+        (0, _bling.$)('.last-name').innerHTML = memberDetail.lastName;
+        (0, _bling.$)('.designation').innerHTML = memberDetail.designation;
+        (0, _bling.$)('.details').innerHTML = memberDetail.details;
+        body.classList.remove('fadeOut');
+        body.classList.add('fadeIn');
+    }, 1000);
+};
+
+(0, _bling.$)('#member-1-image').on('click', changeMember('#member-1-image', 0));
+(0, _bling.$)('#member-2-image').on('click', changeMember('#member-2-image', 1));
+(0, _bling.$)('#member-3-image').on('click', changeMember('#member-3-image', 2));
+(0, _bling.$)('#member-4-image').on('click', changeMember('#member-4-image', 3));
+(0, _bling.$)('#member-5-image').on('click', changeMember('#member-5-image', 4));
+(0, _bling.$)('#member-6-image').on('click', changeMember('#member-6-image', 5));
+(0, _bling.$)('#member-7-image').on('click', changeMember('#member-7-image', 6));
 
 /***/ })
 /******/ ]);

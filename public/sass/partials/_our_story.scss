@@ -1,9 +1,9 @@
 .our_story {
   padding: 2em;
   .top_section {
-    // box-shadow: inset 0px 5px 10px 2px rgba(0,0,0,0.45);
+    box-shadow: inset 0px 5px 10px 2px rgba(0,0,0,0.45);
     height: 450px;
-    // background: url('/images/photos/our-story-bg.jpg') center center;
+    background: url('/images/photos/our-story-bg.jpg') center center;
     background-size: cover;
     padding: 2em 0 0 2em;
     &-text {
@@ -87,9 +87,14 @@
       flex-direction: row;
       align-items: center;
       .member-image {
-        height: 400px;
-        width: 300px;
+        min-height: 400px;
+        min-width: 300px;
         margin: 0 1em;
+        background: url('/images/photos/placeholder.png') center center;
+        background-size: cover;
+      }
+      .member-image.active {
+        border: 10px solid gold;
       }
       .member-1 {
         margin-left: 0;

@@ -12,7 +12,7 @@ block content
       .team--info
         .team--info-header
           p Meet The Team
-        .team--info-body
+        .team--info-body.animated
           .team--info-body-left
             p.first-name Ratnasambhav
             p.last-name Priyadarshi
@@ -25,10 +25,10 @@ block content
               a(href='#')!= h.icon('twitter')
               a(href='#')!= h.icon('instagram')
       .team--slider
-          img.member-image.member-1.active(src='/images/photos/placeholder.png')
-          img.member-image.member-2(src='/images/photos/placeholder.png')
-          img.member-image.member-3(src='/images/photos/placeholder.png')
-          img.member-image.member-4(src='/images/photos/placeholder.png')
-          img.member-image.member-5(src='/images/photos/placeholder.png')
-          img.member-image.member-6(src='/images/photos/placeholder.png')
-          img.member-image.member-7(src='/images/photos/placeholder.png')
+          .member-image.active(id='member-1-image')
+          .member-image(id='member-2-image')
+          .member-image(id='member-3-image')
+          .member-image(id='member-4-image')
+          .member-image(id='member-5-image')
+          .member-image(id='member-6-image')
+          .member-image(id='member-7-image')
