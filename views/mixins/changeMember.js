@@ -174,14 +174,17 @@ function changeMember(image, index) {
     $('.member-image.active').classList.remove('active')
     $(image).classList.add('active')
     const body = $('.team--info-body')
-    body.classList.add('fadeOut')
+    body.classList.add('flipOutX')
+    // body.classList.add('fadeOutDown')
     const memberDetail = memberDetails[index]
     setTimeout(() => {
         $('.first-name').innerHTML = memberDetail.firstName
         $('.last-name').innerHTML = memberDetail.lastName
         $('.designation').innerHTML = memberDetail.designation
         $('.details').innerHTML = memberDetail.details
-        body.classList.remove('fadeOut')
-        body.classList.add('fadeIn')
-    }, 1000)
+        body.classList.remove('flipOutX')
+        // body.classList.remove('fadeOutDown')
+        body.classList.add('flipInX')
+        // body.classList.add('fadeInDown')
+    }, 500)
 }

@@ -1,4 +1,4 @@
-html {
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i);html {
   box-sizing: border-box; }
 
 *, *:before, *:after {
@@ -758,7 +758,8 @@ template {
         min-width: 300px;
         margin: 0 1em;
         background: url("/images/photos/placeholder.png") center center;
-        background-size: cover; }
+        background-size: cover;
+        transition: border 0.5s linear; }
       .our_story .team--slider .member-image.active {
         border: 10px solid gold; }
       .our_story .team--slider .member-1 {
@@ -1061,5 +1062,39 @@ template {
     .get_in_touch .blog_and_newsletter_wrapper .newsletter input[type='email'] {
       margin-bottom: 0.5em;
       width: 80%; } }
+
+.blog_grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2em;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 10px;
+  padding: 2em; }
+  .blog_grid--item {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+    .blog_grid--item .content {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center; }
+      .blog_grid--item .content--header {
+        font-weight: 700;
+        font-size: 1.3em;
+        margin: 0.3em 0;
+        text-decoration: none;
+        color: #000; }
+      .blog_grid--item .content--image {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px; }
+      .blog_grid--item .content--desc {
+        padding: 1em; }
+
+* {
+  font-family: 'IBM Plex Sans', sans-serif; }
 
 /*# sourceMappingURL=style.css.map*/

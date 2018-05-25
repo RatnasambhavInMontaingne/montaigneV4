@@ -92,6 +92,7 @@
         margin: 0 1em;
         background: url('/images/photos/placeholder.png') center center;
         background-size: cover;
+        transition: border 0.5s linear;
       }
       .member-image.active {
         border: 10px solid gold;

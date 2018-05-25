@@ -20,15 +20,6 @@ exports.icon = (name) => fs.readFileSync(`./public/images/icons/${name}.svg`);
 // Some details about the site
 exports.siteName = `Montaigne Smart Business Solutions`;
 
-exports.menu = [
-  { slug: '/stores', title: 'Stores', icon: 'store', },
-  { slug: '/tags', title: 'Tags', icon: 'tag', },
-  { slug: '/top', title: 'Top', icon: 'top', },
-  { slug: '/add', title: 'Add', icon: 'add', },
-  { slug: '/map', title: 'Map', icon: 'map', },
-];
-
-
 exports.sections = [
   {
     id: 'incubation',
@@ -128,5 +119,23 @@ exports.teamMembers = [
     designation: 'Developer',
     details: 'Lorem ipsum dolor sit amet, his id verterem volutpat, viderer oporteat cu his. Ea his quod dicta. Vix molestie electram id. Cu sed bonorum verterem sadipscing, ad novum timeam ceteros nam. Eius mediocritatem ne est, etiam nemore detraxit te per. Ne qui dicunt doctus scaevola, summo apeirian ius et.',
     image: 'https://fakeimg.pl/350x350/?text=Hello&font=lobster'
+  }
+]
+
+exports.gridItems = [
+  {
+    title: 'Small Blog Post',
+    image: 'https://source.unsplash.com/random/300x200',
+    desc: 'You just have to put your image size after our URL. Only the first parameter is mandatory. There are options too, you can pass a text, or change some colors.'
+  },
+  {
+    title: 'Medium Blog Post',
+    image: 'https://source.unsplash.com/random/300x300',
+    desc: 'When designing websites, you may not have the images you need at first. But you already know the sizes and inserting some placeholders can help you better seeing the layout.'
+  },
+  {
+    title: 'Large Blog Post',
+    image: 'https://source.unsplash.com/random/300x400',
+    desc: 'When designing websites, you may not have the images you need at first. But you already know the sizes and inserting some placeholders can help you better seeing the layout.'
   }
 ]
