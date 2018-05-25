@@ -51,7 +51,12 @@ if(get_in_touch_form) {
             subject: this.subject.value,
             message: this.message.value,
         }
-        const get_in_touch = await axios.post('/get_in_touch', data);
+        try {
+            const response = await axios.post('/get_in_touch', data);
+            console.log(response.data.message);
+        } catch (error) {
+            console.log(error);
+        }
     })
 }
 
@@ -66,7 +71,6 @@ const resizeGridItem = item => {
 function resizeAllGridItems() {
     const allItems = $$('.blog_grid--item');
     if(allItems) allItems.map(item => resizeGridItem(item));
-    console.log('Resized');
 }
 
 function resizeItemAfterImageLoad(instance) {
