@@ -167,24 +167,20 @@ const memberDetails = [
             }
         ]
     }
-]
+];
 
 function changeMember(image, index) {
-    const $ = document.querySelector.bind(document);
-    $('.member-image.active').classList.remove('active')
-    $(image).classList.add('active')
-    const body = $('.team--info-body')
-    body.classList.add('flipOutX')
-    // body.classList.add('fadeOutDown')
-    const memberDetail = memberDetails[index]
+    $('.member-image.active').removeClass('active');
+    $(image).addClass('active');
+    const body = $('.team--info-body');
+    body.addClass('fadeOutDown');
+    const memberDetail = memberDetails[index];
     setTimeout(() => {
-        $('.first-name').innerHTML = memberDetail.firstName
-        $('.last-name').innerHTML = memberDetail.lastName
-        $('.designation').innerHTML = memberDetail.designation
-        $('.details').innerHTML = memberDetail.details
-        body.classList.remove('flipOutX')
-        // body.classList.remove('fadeOutDown')
-        body.classList.add('flipInX')
-        // body.classList.add('fadeInDown')
-    }, 500)
+        $('.first-name').html(memberDetail.firstName);
+        $('.last-name').html(memberDetail.lastName);
+        $('.designation').html(memberDetail.designation);
+        $('.details').html(memberDetail.details);
+        body.removeClass('fadeOutDown');
+        body.addClass('fadeInDown');
+    }, 500);
 }

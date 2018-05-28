@@ -488,7 +488,7 @@ template {
       align-items: center;
   height: calc(100vh - 37px);
   padding: 0.5em 0;
-  animation: bg-slide 200s linear infinite; }
+  animation: bg-slide 200s linear infinite !important; }
   .home p {
     font-size: 1.2em;
     color: #fff;

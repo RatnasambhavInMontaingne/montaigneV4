@@ -3,7 +3,7 @@ include mixins/social
 include mixins/blogItem
 
 block content
-  .get_in_touch
+  .get_in_touch.barba-container
     iframe.map(src="https://maps.google.com/maps?q=Montaigne Smart&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0")
     .contact_and_form_wrapper
       .contact
@@ -57,5 +57,3 @@ block content
         p Designed and developed by
         img(src='images/photos/logo 512X512 black.png' alt='Montaigne')
         p labs
-  .social_wrapper
-    +social()

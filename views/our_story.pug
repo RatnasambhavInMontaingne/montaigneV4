@@ -3,7 +3,7 @@ include mixins/social
 //- include mixins/teamMember
 
 block content
-  .our_story
+  .our_story.barba-container
     .top_section
       .top_section-text
         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor in nemo facilis accusantium eligendi officiis explicabo illum, perspiciatis ratione. Magnam, praesentium? Cum, eos commodi similique amet possimus aliquam. Pariatur repellat obcaecati omnis molestias voluptas nemo aliquid accusantium laudantium reiciendis ipsum.
@@ -26,12 +26,11 @@ block content
               a(href='#')!= h.icon('instagram')
       .team--slider
           .member-image.active(id='member-1-image' onclick="changeMember('#member-1-image', 0)")
-          .member-image(id='member-2-image' onclick="changeMember('#member-2-image', 1)")
+          .member-image(id='member-2-image' onclick="changeMember('#member-2-image', 0)")
           .member-image(id='member-3-image' onclick="changeMember('#member-3-image', 2)")
           .member-image(id='member-4-image' onclick="changeMember('#member-4-image', 3)")
           .member-image(id='member-5-image' onclick="changeMember('#member-5-image', 4)")
           .member-image(id='member-6-image' onclick="changeMember('#member-6-image', 5)")
           .member-image(id='member-7-image' onclick="changeMember('#member-7-image', 6)")
-
-  script
-    include mixins/changeMember.js
+    script
+      include mixins/changeMember.js
