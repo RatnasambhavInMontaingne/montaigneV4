@@ -523,150 +523,62 @@ template {
 .skillset {
   display: -ms-flexbox;
   display: flex;
-  height: calc(100vh - 40px);
-  padding: 2em 0 calc(40px + 2em) 0; }
-
-.top {
-  display: none; }
-
-.right {
-  -ms-flex: 1 1 auto;
-      flex: 1 1 auto;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-direction: column;
-      flex-direction: column;
-  background-color: #BE655F;
-  overflow-y: scroll;
-  height: calc(100vh - 80px - 4em); }
-
-.section {
-  height: 100%;
-  width: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-align: center;
-      align-items: center;
-  padding: 1em; }
-  .section-image {
-    width: 45%;
-    min-width: 500px;
-    height: 100%;
-    background: url("/images/photos/placeholder.gif") center center;
+      flex-direction: column; }
+  .skillset .section {
+    height: 75vh;
+    display: -ms-flexbox;
+    display: flex; }
+    .skillset .section .image_section {
+      width: calc(100% - 500px); }
+    .skillset .section .text_section {
+      padding: 0 3.5em;
+      background-color: #F6F5F2;
+      width: 500px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; }
+      .skillset .section .text_section .illustration {
+        border-radius: 50%;
+        margin-bottom: 1em;
+        box-shadow: 10px 10px 30px -10px rgba(0, 0, 0, 0.45); }
+      .skillset .section .text_section .header {
+        text-align: center;
+        margin-bottom: 1em;
+        font-size: 2em;
+        font-weight: 700; }
+      .skillset .section .text_section .description {
+        margin-bottom: 1em;
+        text-align: center; }
+      .skillset .section .text_section .link {
+        text-decoration: none;
+        font-weight: 700;
+        color: #000;
+        border-bottom: 2px solid #000; }
+  .skillset .incubation .image_section {
+    background: url("https://source.unsplash.com/random") center center;
     background-size: cover; }
-  .section-text {
-    width: 40%;
-    color: #D0D1D2; }
-    .section-text .header {
-      border-bottom: 1px solid #D0D1D2;
-      font-size: 1.2em;
-      font-weight: 600; }
-
-.left {
-  -ms-flex: 0 1 300px;
-      flex: 0 1 300px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center; }
-  .left-item {
-    font-size: 1em;
-    text-decoration: none;
-    color: #000;
-    border-left: 4px solid #D0D1D2;
-    padding: 0.3em 0 0.3em 0.3em;
-    margin: 0.5em 1em;
-    transition: border-left 0.15s ease-out; }
-    .left-item:hover {
-      border-left: 4px solid #BE655F; }
-  .left .active {
-    border-left: 4px solid #BE655F; }
-  .left .expert {
-    border: 4px solid #BE655F;
-    padding: 0.5em;
-    background: none;
-    margin: 1em;
-    transition: color 0.15s ease-out, background-color 0.15s ease-out; }
-    .left .expert:hover {
-      color: #fff;
-      background-color: #BE655F; }
-  .left .social {
+  .skillset .creative-designing .image_section {
     width: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    margin-top: 5em; }
-
-.bottom {
-  display: none; }
-  .bottom .expert {
-    border: 4px solid #BE655F;
-    padding: 0.5em;
-    background: none;
-    margin: 1em;
-    transition: color 0.15s ease-out, background-color 0.15s ease-out; }
-    .bottom .expert:hover {
-      color: #fff;
-      background-color: #BE655F; }
-
-@media screen and (max-width: 1200px) {
-  .section {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    height: auto; }
-    .section-image {
-      height: 500px;
-      width: 100%; }
-    .section-text {
-      width: 90%; } }
-
-@media screen and (max-width: 960px) {
-  .skillset {
-    height: auto;
-    width: auto;
-    margin: 0;
-    padding: 0;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column; }
-  .top {
-    margin: 0.5em;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column; }
-    .top-item {
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-      min-width: 200px;
-      font-size: 1em;
-      text-decoration: none;
-      color: #000;
-      margin: 0.5em 1em;
-      padding: 0.3em 0 0.3em 0.3em;
-      border-left: 4px solid #D0D1D2;
-      transition: border-left 0.15s ease-out; }
-      .top-item:hover {
-        border-left: 4px solid #BE655F; }
-  .section {
-    padding: 0; }
-    .section-image {
-      min-height: 100px; }
-    .section-text {
-      padding: 1em;
-      width: 100%; }
-  .left {
-    display: none; } }
+    background: url("https://source.unsplash.com/random") center center;
+    background-size: cover; }
+  .skillset .ui_ux .image_section {
+    width: 100%;
+    background: url("https://source.unsplash.com/random") center center;
+    background-size: cover; }
+  .skillset .marketing .image_section {
+    width: 100%;
+    background: url("https://source.unsplash.com/random") center center;
+    background-size: cover; }
+  .skillset .predictive_analytics .image_section {
+    width: 100%;
+    background: url("https://source.unsplash.com/random") center center;
+    background-size: cover; }
 
 .our_story {
   padding: 2em; }
@@ -1073,7 +985,7 @@ template {
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-auto-rows: 40px;
   padding: 2em;
-  background: url("/images/photos/jason-leung-495204-unsplash.jpg") center center fixed;
+  background: url("/images/photos/blogBG2.jpg") center center fixed;
   background-size: cover;
   perspective: 1000px; }
   .blog_grid--item {

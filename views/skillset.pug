@@ -1,24 +1,35 @@
 extends layout
 include mixins/social
-include mixins/skillsetSection
 
 block content
   .skillset.barba-container
-    .top
-      a.top-item.active(href='#incubation') Incubation
-      a.top-item(href='#creative_designing') Creative Designing
-      a.top-item(href='#marketing') Marketing
-      a.top-item(href='#ui_ux') UI/UX
-      a.top-item(href='#predictive_analytics') Predictive Analytics
-    .right
-      for section in h.sections
-        +skillsetSection(section)
-    .left
-      a.left-item.active(href='#incubation') Incubation
-      a.left-item(href='#creative_designing') Creative Designing
-      a.left-item(href='#marketing') Marketing
-      a.left-item(href='#ui_ux') UI/UX
-      a.left-item(href='#predictive_analytics') Predictive Analytics
-      button.expert Talk to an Expert
-      +social
-    button.bottom.expert Talk to an Expert
+    .section.incubation
+      .image_section
+      .text_section
+        image.illustration(src='https://source.unsplash.com/random/100x100')
+        span.header Incubation
+        span.description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium corrupti quod fugiat sit voluptatum provident delectus quis, earum reiciendis illo perspiciatis dicta! Assumenda consectetur perspiciatis ipsam error corporis, libero veniam?
+        a.link(href='/get_in_touch') Let's Talk!
+    .section.creative-designing
+      .image_section
+    .section.ui_ux
+      .text_section
+        image.illustration(src='https://source.unsplash.com/random/100x100')
+        span.header UI/UX
+        span.description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium corrupti quod fugiat sit voluptatum provident delectus quis, earum reiciendis illo perspiciatis dicta! Assumenda consectetur perspiciatis ipsam error corporis, libero veniam?
+        a.link(href='/get_in_touch') Let's Talk!
+      .image_section
+    .section.marketing
+      .image_section
+      .text_section
+        image.illustration(src='https://source.unsplash.com/random/100x100')
+        span.header Marketing
+        span.description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium corrupti quod fugiat sit voluptatum provident delectus quis, earum reiciendis illo perspiciatis dicta! Assumenda consectetur perspiciatis ipsam error corporis, libero veniam?
+        a.link(href='/get_in_touch') Let's Talk!
+    .section.predictive_analytics
+      .text_section
+        image.illustration(src='https://source.unsplash.com/random/100x100')
+        span.header Predictive Analytics
+        span.description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium corrupti quod fugiat sit voluptatum provident delectus quis, earum reiciendis illo perspiciatis dicta! Assumenda consectetur perspiciatis ipsam error corporis, libero veniam?
+        a.link(href='/get_in_touch') Let's Talk!
+      .image_section
