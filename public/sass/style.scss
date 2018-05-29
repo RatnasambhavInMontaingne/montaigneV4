@@ -7,13 +7,9 @@
 @import 'partials/our_story';
 @import 'partials/get_in_touch';
 @import 'partials/blog';
-@import 'partials/snackbar';
+@import 'partials/working_with_us';
 
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i');
-
-* {
-  font-family: 'IBM Plex Sans', sans-serif;
-  // font-family: 'IBM Plex Sans Condensed', sans-serif;
-  // font-family: 'IBM Plex Serif', serif;
-  // font-family: 'IBM Plex Mono', monospace;
+@font-face {
+  font-family: BebasNeue;
+  src: url(/fonts/BebasNeue-Regular.otf);
 }

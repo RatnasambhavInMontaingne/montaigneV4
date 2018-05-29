@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1657,7 +1657,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 });
 ;
 //# sourceMappingURL=axios.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7), __webpack_require__(0)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6), __webpack_require__(0)(module)))
 
 /***/ }),
 /* 2 */
@@ -3319,157 +3319,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
-
-var memberDetails = [{
-    firstName: 'Ratnasambhav',
-    lastName: 'Priyadarshi',
-    designation: 'Developer',
-    details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate, impedit, repudiandae, accusamus officiis officia unde error necessitatibus beatae dignissimos temporibus laudantium tempore autem reprehenderit ipsa nisi labore expedita mollitia?',
-    social: [{
-        icon: 'github',
-        href: '#'
-    }, {
-        icon: 'linkedin',
-        href: '#'
-    }, {
-        icon: 'twitter',
-        href: '#'
-    }, {
-        icon: 'instagram',
-        href: '#'
-    }]
-}, {
-    firstName: 'Jhon',
-    lastName: 'Wick',
-    designation: 'Developer',
-    details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate, impedit, repudiandae, accusamus officiis officia unde error necessitatibus beatae dignissimos temporibus laudantium tempore autem reprehenderit ipsa nisi labore expedita mollitia?',
-    social: [{
-        icon: 'github',
-        href: '#'
-    }, {
-        icon: 'linkedin',
-        href: '#'
-    }, {
-        icon: 'twitter',
-        href: '#'
-    }, {
-        icon: 'instagram',
-        href: '#'
-    }]
-}, {
-    firstName: 'Jhon',
-    lastName: 'HHHJJJJKKKK',
-    designation: 'ASDFGH',
-    details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate, impedit, repudiandae, accusamus officiis officia unde error necessitatibus beatae dignissimos temporibus laudantium tempore autem reprehenderit ipsa nisi labore expedita mollitia?',
-    social: [{
-        icon: 'github',
-        href: '#'
-    }, {
-        icon: 'linkedin',
-        href: '#'
-    }, {
-        icon: 'twitter',
-        href: '#'
-    }, {
-        icon: 'instagram',
-        href: '#'
-    }]
-}, {
-    firstName: 'Jhon',
-    lastName: 'HHHJJJJKKKK',
-    designation: 'ASDFGH',
-    details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate, impedit, repudiandae, accusamus officiis officia unde error necessitatibus beatae dignissimos temporibus laudantium tempore autem reprehenderit ipsa nisi labore expedita mollitia?',
-    social: [{
-        icon: 'github',
-        href: '#'
-    }, {
-        icon: 'linkedin',
-        href: '#'
-    }, {
-        icon: 'twitter',
-        href: '#'
-    }, {
-        icon: 'instagram',
-        href: '#'
-    }]
-}, {
-    firstName: 'Jhon',
-    lastName: 'HHHJJJJKKKK',
-    designation: 'ASDFGH',
-    details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate, impedit, repudiandae, accusamus officiis officia unde error necessitatibus beatae dignissimos temporibus laudantium tempore autem reprehenderit ipsa nisi labore expedita mollitia?',
-    social: [{
-        icon: 'github',
-        href: '#'
-    }, {
-        icon: 'linkedin',
-        href: '#'
-    }, {
-        icon: 'twitter',
-        href: '#'
-    }, {
-        icon: 'instagram',
-        href: '#'
-    }]
-}, {
-    firstName: 'Jhon',
-    lastName: 'HHHJJJJKKKK',
-    designation: 'ASDFGH',
-    details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate, impedit, repudiandae, accusamus officiis officia unde error necessitatibus beatae dignissimos temporibus laudantium tempore autem reprehenderit ipsa nisi labore expedita mollitia?',
-    social: [{
-        icon: 'github',
-        href: '#'
-    }, {
-        icon: 'linkedin',
-        href: '#'
-    }, {
-        icon: 'twitter',
-        href: '#'
-    }, {
-        icon: 'instagram',
-        href: '#'
-    }]
-}, {
-    firstName: 'Jhon',
-    lastName: 'HHHJJJJKKKK',
-    designation: 'ASDFGH',
-    details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate, impedit, repudiandae, accusamus officiis officia unde error necessitatibus beatae dignissimos temporibus laudantium tempore autem reprehenderit ipsa nisi labore expedita mollitia?',
-    social: [{
-        icon: 'github',
-        href: '#'
-    }, {
-        icon: 'linkedin',
-        href: '#'
-    }, {
-        icon: 'twitter',
-        href: '#'
-    }, {
-        icon: 'instagram',
-        href: '#'
-    }]
-}];
-
-function changeMember(image, index) {
-    $('.member-image.active').removeClass('active');
-    $(image).addClass('active');
-    var body = $('.team--info-body');
-    body.addClass('fadeOutDown');
-    var memberDetail = memberDetails[index];
-    setTimeout(function () {
-        $('.first-name').html(memberDetail.firstName);
-        $('.last-name').html(memberDetail.lastName);
-        $('.designation').html(memberDetail.designation);
-        $('.details').html(memberDetail.details);
-        body.removeClass('fadeOutDown');
-        body.addClass('fadeInDown');
-    }, 500);
-}
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_LOCAL_MODULE_0__;var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -3959,7 +3808,7 @@ function factory(window, EvEmitter) {
 });
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5055,13 +4904,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)(module)))
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5254,19 +5103,19 @@ process.umask = function () {
 };
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(6);
+__webpack_require__(5);
 
 var _barba = __webpack_require__(2);
 
 var _barba2 = _interopRequireDefault(_barba);
 
-var _typed = __webpack_require__(5);
+var _typed = __webpack_require__(4);
 
 var _typed2 = _interopRequireDefault(_typed);
 
@@ -5274,26 +5123,11 @@ var _axios = __webpack_require__(1);
 
 var _axios2 = _interopRequireDefault(_axios);
 
-var _imagesloaded = __webpack_require__(4);
+var _imagesloaded = __webpack_require__(3);
 
 var _imagesloaded2 = _interopRequireDefault(_imagesloaded);
 
-var _changeMember = __webpack_require__(3);
-
-var _changeMember2 = _interopRequireDefault(_changeMember);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-$('#nav').click(navbar);
-
-function navbar() {
-    var x = $('#nav');
-    if (x.className === 'nav') {
-        x.className += ' responsive';
-    } else {
-        x.className = 'nav';
-    }
-}
 
 var typedOptions = {
     typeSpeed: 40,
@@ -5334,11 +5168,7 @@ var FadeTransition = _barba2.default.BaseTransition.extend({
     },
 
     fadeOut: function fadeOut() {
-        $(this.oldContainer).css({ position: 'relative' });
-        return $(this.oldContainer).animate({
-            opacity: 0,
-            right: '100vw'
-        }, 400).promise();
+        return $(this.oldContainer).animate({ opacity: 0 }, 350).promise();
     },
 
     fadeIn: function fadeIn() {
@@ -5349,15 +5179,10 @@ var FadeTransition = _barba2.default.BaseTransition.extend({
 
         el.css({
             visibility: 'visible',
-            opacity: 0,
-            position: 'relative',
-            left: '100vw'
+            opacity: 0
         });
 
-        el.animate({
-            opacity: 1,
-            left: '0'
-        }, 250, function () {
+        el.animate({ opacity: 1 }, 350, function () {
             _this.done();
         });
     }

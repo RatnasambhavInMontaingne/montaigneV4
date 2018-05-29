@@ -4,18 +4,6 @@ import Barba from './modules/barba';
 import Typed from './modules/typed';
 import axios from './modules/axios';
 import imagesLoaded from './modules/imagesloaded.pkgd';
-import changeMember from './modules/changeMember';
-
-$('#nav').click(navbar);
-
-function navbar() {
-  const x = $('#nav');
-  if (x.className === 'nav') {
-      x.className += ' responsive';
-  } else {
-      x.className = 'nav';
-  }
-}
 
 const typedOptions = {
     typeSpeed: 40,
@@ -58,11 +46,7 @@ const FadeTransition = Barba.BaseTransition.extend({
     },
 
     fadeOut: function() {
-        $(this.oldContainer).css({position: 'relative'});
-        return $(this.oldContainer).animate({
-            opacity: 0,
-            right: '100vw'
-        }, 400).promise();
+        return $(this.oldContainer).animate({ opacity: 0 }, 350).promise();
     },
 
     fadeIn: function() {
@@ -74,14 +58,9 @@ const FadeTransition = Barba.BaseTransition.extend({
         el.css({
             visibility : 'visible',
             opacity : 0,
-            position: 'relative',
-            left: '100vw'
         });
 
-        el.animate({
-            opacity: 1,
-            left: '0'
-        }, 250, function() {
+        el.animate({ opacity: 1 }, 350, function() {
             _this.done();
         });
     }
