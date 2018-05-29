@@ -526,15 +526,15 @@ template {
   -ms-flex-direction: column;
       flex-direction: column; }
   .skillset .section {
-    height: 75vh;
+    height: 60vh;
     display: -ms-flexbox;
     display: flex; }
     .skillset .section .image_section {
-      width: calc(100% - 500px); }
+      width: calc(100% - 400px); }
     .skillset .section .text_section {
-      padding: 0 3.5em;
+      padding: 3.5em;
       background-color: #F6F5F2;
-      width: 500px;
+      width: 400px;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
@@ -561,24 +561,26 @@ template {
         color: #000;
         border-bottom: 2px solid #000; }
   .skillset .incubation .image_section {
-    background: url("https://source.unsplash.com/random") center center;
+    background: url("https://source.unsplash.com/random/1") center center fixed;
     background-size: cover; }
   .skillset .creative-designing .image_section {
-    width: 100%;
-    background: url("https://source.unsplash.com/random") center center;
+    background: url("https://source.unsplash.com/random/2") center center fixed;
     background-size: cover; }
   .skillset .ui_ux .image_section {
-    width: 100%;
-    background: url("https://source.unsplash.com/random") center center;
+    background: url("https://source.unsplash.com/random/3") center center fixed;
     background-size: cover; }
   .skillset .marketing .image_section {
-    width: 100%;
-    background: url("https://source.unsplash.com/random") center center;
+    background: url("https://source.unsplash.com/random/4") center center fixed;
     background-size: cover; }
   .skillset .predictive_analytics .image_section {
-    width: 100%;
-    background: url("https://source.unsplash.com/random") center center;
+    background: url("https://source.unsplash.com/random/5") center center fixed;
     background-size: cover; }
+
+@keyframes incubation {
+  0% {
+    background-position: 0px 0px; }
+  100% {
+    background-position: 0px -5600px; } }
 
 .our_story {
   padding: 2em; }

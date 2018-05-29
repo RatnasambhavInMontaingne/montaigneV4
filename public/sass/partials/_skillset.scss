@@ -2,15 +2,15 @@
   display: flex;
   flex-direction: column;
   .section {
-    height: 75vh;
+    height: 60vh;
     display: flex;
     .image_section {
-      width: calc(100% - 500px);
+      width: calc(100% - 400px);
     }
     .text_section {
-      padding: 0 3.5em;
+      padding: 3.5em;
       background-color: #F6F5F2;
-      width: 500px;
+      width: 400px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -40,36 +40,37 @@
   }
   .incubation {
     .image_section {
-      background: url('https://source.unsplash.com/random') center center;
+      background: url('https://source.unsplash.com/random/1') center center fixed;
       background-size: cover;
     }
   }
   .creative-designing {
     .image_section {
-      width: 100%;
-      background: url('https://source.unsplash.com/random') center center;
+      background: url('https://source.unsplash.com/random/2') center center fixed;
       background-size: cover;
     }
   }
   .ui_ux {
     .image_section {
-      width: 100%;
-      background: url('https://source.unsplash.com/random') center center;
+      background: url('https://source.unsplash.com/random/3') center center fixed;
       background-size: cover;
     }
   }
   .marketing {
     .image_section {
-      width: 100%;
-      background: url('https://source.unsplash.com/random') center center;
+      background: url('https://source.unsplash.com/random/4') center center fixed;
       background-size: cover;
     }
   }
   .predictive_analytics {
     .image_section {
-      width: 100%;
-      background: url('https://source.unsplash.com/random') center center;
+      background: url('https://source.unsplash.com/random/5') center center fixed;
       background-size: cover;
     }
   }
+}
+
+@keyframes incubation{
+	0% {background-position: 0px 0px;}
+	100% {background-position: 0px -5600px; }
 }

@@ -4,6 +4,7 @@ import Barba from './modules/barba';
 import Typed from './modules/typed';
 import axios from './modules/axios';
 import imagesLoaded from './modules/imagesloaded.pkgd';
+import Rellax from './modules/rellax';
 
 const typedOptions = {
     typeSpeed: 40,
@@ -115,5 +116,10 @@ Barba.Dispatcher.on('transitionCompleted', function() {
                 console.log(error);
             }
         })
+    }
+
+    if($('.skillset').length) {
+        const rellax = new Rellax('.rellax');
+        console.log('Rellax');
     }
 });
