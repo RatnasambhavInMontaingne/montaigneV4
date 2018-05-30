@@ -118,8 +118,8 @@ Barba.Dispatcher.on('transitionCompleted', function() {
         })
     }
 
-    if($('.skillset').length) {
-        const rellax = new Rellax('.rellax');
-        console.log('Rellax');
-    }
+    // if($('.skillset').length) {
+    //     const rellax = new Rellax('.rellax');
+    //     console.log('Rellax');
+    // }
 });

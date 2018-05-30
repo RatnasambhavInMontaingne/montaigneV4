@@ -44,16 +44,11 @@ block content
           textarea(name='message' id='message' rows='5' cols='35' placeholder='Enter your message')
         .form--section.form--section-center
           input(type='submit' value='Submit')
-    .blog_and_newsletter_wrapper
-      .blog
-        each post in h.posts
-          +blogItem(post)
+    .newsletter_wrapper
       form.newsletter
         p Subscribe to us
         input(type='email' name='newsletter_email' id='newsletter_email' required placeholder='Enter Your Email')
         input(type='submit' value='Submit')
       .vertical_line
       .footer
-        p Designed and developed by
-        img(src='images/photos/logo 512X512 black.png' alt='Montaigne')
-        p labs
+        | Designed and developed by <img src='images/photos/logo 512X512 black.png' alt='Montaigne'> labs

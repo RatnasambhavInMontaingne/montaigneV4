@@ -526,15 +526,25 @@ template {
   -ms-flex-direction: column;
       flex-direction: column; }
   .skillset .section {
-    height: 60vh;
+    height: 75vh;
+    min-height: 435px;
+    max-height: 600px;
     display: -ms-flexbox;
     display: flex; }
     .skillset .section .image_section {
-      width: calc(100% - 400px); }
+      overflow: hidden;
+      width: calc(100% - 500px); }
+      .skillset .section .image_section .image {
+        transition: transform 500ms ease-in;
+        width: 100%;
+        height: 100%; }
+        .skillset .section .image_section .image:hover {
+          -ms-transform: scale(1.1);
+              transform: scale(1.1); }
     .skillset .section .text_section {
       padding: 3.5em;
       background-color: #F6F5F2;
-      width: 400px;
+      width: 500px;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
@@ -560,27 +570,59 @@ template {
         font-weight: 700;
         color: #000;
         border-bottom: 2px solid #000; }
-  .skillset .incubation .image_section {
-    background: url("https://source.unsplash.com/random/1") center center fixed;
+  .skillset .incubation .image_section .image {
+    background: url("https://source.unsplash.com/random/1") center center;
     background-size: cover; }
-  .skillset .creative-designing .image_section {
-    background: url("https://source.unsplash.com/random/2") center center fixed;
+  .skillset .creative-designing .image_section .image {
+    background: url("https://source.unsplash.com/random/2") center center;
     background-size: cover; }
-  .skillset .ui_ux .image_section {
-    background: url("https://source.unsplash.com/random/3") center center fixed;
+  .skillset .ui_ux .image_section .image {
+    background: url("https://source.unsplash.com/random/3") center center;
     background-size: cover; }
-  .skillset .marketing .image_section {
-    background: url("https://source.unsplash.com/random/4") center center fixed;
+  .skillset .marketing .image_section .image {
+    background: url("https://source.unsplash.com/random/4") center center;
     background-size: cover; }
-  .skillset .predictive_analytics .image_section {
-    background: url("https://source.unsplash.com/random/5") center center fixed;
+  .skillset .predictive_analytics .image_section .image {
+    background: url("https://source.unsplash.com/random/5") center center;
     background-size: cover; }
 
-@keyframes incubation {
-  0% {
-    background-position: 0px 0px; }
-  100% {
-    background-position: 0px -5600px; } }
+@media screen and (max-width: 1200px) {
+  .skillset .section .image_section {
+    width: calc(100% - 400px); }
+  .skillset .section .text_section {
+    width: 400px;
+    padding: 1em; } }
+
+@media screen and (max-width: 1000px) {
+  .skillset .section .image_section {
+    width: calc(100% - 300px); }
+  .skillset .section .text_section {
+    width: 300px;
+    padding: 1em; } }
+
+@media screen and (max-width: 700px) {
+  .skillset .section {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    height: auto; }
+    .skillset .section .image_section {
+      height: 40vh;
+      width: 100%;
+      -ms-flex-order: 1;
+          order: 1; }
+    .skillset .section .text_section {
+      -ms-flex-order: 2;
+          order: 2;
+      width: auto;
+      padding: 2em 1em; } }
+
+@media screen and (max-width: 450px) {
+  .skillset .section .image_section .image {
+    background-attachment: fixed;
+    transition: none; }
+    .skillset .section .image_section .image:hover {
+      -ms-transform: none;
+          transform: none; } }
 
 .our_story {
   padding: 2em; }
@@ -808,42 +850,14 @@ template {
     .get_in_touch .contact_and_form_wrapper .verticle_line {
       background-color: #459CC8;
       width: 3px; }
-  .get_in_touch .blog_and_newsletter_wrapper {
+  .get_in_touch .newsletter_wrapper {
     padding: 2em 0 1em 0;
     background-image: url("/images/photos/yellow bg.jpg");
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column; }
-    .get_in_touch .blog_and_newsletter_wrapper .blog {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: row;
-          flex-direction: row;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
-      .get_in_touch .blog_and_newsletter_wrapper .blog--item {
-        min-height: 300px;
-        min-width: 300px;
-        background-position: center center;
-        background-size: cover;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-        -ms-flex-align: center;
-            align-items: center;
-        margin-bottom: 1em; }
-        .get_in_touch .blog_and_newsletter_wrapper .blog--item a {
-          text-decoration: none;
-          background-color: rgba(0, 0, 0, 0.8);
-          color: #fff;
-          padding: 0.5em;
-          max-width: 250px;
-          text-align: center; }
-    .get_in_touch .blog_and_newsletter_wrapper .newsletter {
+    .get_in_touch .newsletter_wrapper .newsletter {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
@@ -852,11 +866,10 @@ template {
           justify-content: center;
       -ms-flex-align: center;
           align-items: center;
-      margin-top: 3em;
       margin-bottom: 2em; }
-      .get_in_touch .blog_and_newsletter_wrapper .newsletter p {
+      .get_in_touch .newsletter_wrapper .newsletter p {
         font-weight: 300; }
-      .get_in_touch .blog_and_newsletter_wrapper .newsletter input[type='email'] {
+      .get_in_touch .newsletter_wrapper .newsletter input[type='email'] {
         background: none;
         background-color: #FEFFFF;
         border: none;
@@ -865,14 +878,14 @@ template {
         margin: 0 2em;
         padding: 0.5em;
         width: 400px; }
-      .get_in_touch .blog_and_newsletter_wrapper .newsletter input[type='submit'] {
+      .get_in_touch .newsletter_wrapper .newsletter input[type='submit'] {
         border: none;
         border-radius: 3px;
         background-color: #459CC8;
         color: #fff;
         padding: 0.5em;
         font-weight: 700; }
-    .get_in_touch .blog_and_newsletter_wrapper .vertical_line {
+    .get_in_touch .newsletter_wrapper .vertical_line {
       -ms-flex-item-align: center;
           -ms-grid-row-align: center;
           align-self: center;
@@ -880,7 +893,7 @@ template {
       height: 2px;
       background-color: #000;
       margin: 0.5em 0; }
-    .get_in_touch .blog_and_newsletter_wrapper .footer {
+    .get_in_touch .newsletter_wrapper .footer {
       margin: 1em 0;
       display: -ms-flexbox;
       display: flex;
@@ -889,9 +902,10 @@ template {
       -ms-flex-align: center;
           align-items: center;
       text-transform: uppercase; }
-      .get_in_touch .blog_and_newsletter_wrapper .footer img {
+      .get_in_touch .newsletter_wrapper .footer img {
         max-width: 40px;
-        max-height: 40px; }
+        max-height: 40px;
+        margin: 0 5px; }
 
 .social_wrapper {
   width: 100%;
@@ -962,22 +976,23 @@ template {
       .get_in_touch .contact_and_form_wrapper .form--section #name, .get_in_touch .contact_and_form_wrapper .form--section #organisation {
         margin-bottom: 1em; } }
 
-@media screen and (max-width: 1024px) {
-  .get_in_touch .blog_and_newsletter_wrapper .blog--item {
-    min-height: 250px;
-    min-width: 250px; } }
-
 @media screen and (max-width: 730px) {
-  .get_in_touch .blog_and_newsletter_wrapper .newsletter {
+  .get_in_touch .newsletter_wrapper .newsletter {
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-pack: justify;
         justify-content: space-between;
     -ms-flex-align: center;
         align-items: center; }
-    .get_in_touch .blog_and_newsletter_wrapper .newsletter input[type='email'] {
+    .get_in_touch .newsletter_wrapper .newsletter input[type='email'] {
       margin-bottom: 0.5em;
       width: 80%; } }
+
+@media screen and (max-width: 400px) {
+  .get_in_touch {
+    margin: 0; }
+    .get_in_touch .newsletter_wrapper .footer {
+      font-size: 0.8em; } }
 
 .blog_grid {
   display: -ms-grid;
