@@ -1,26 +1,28 @@
 .home {
   background-image: url('/images/photos/home-page-bg_low.jpg');
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 37px);
-  padding: 0.5em 0;
   animation: bg-slide 200s linear infinite !important;
-  p {
-    font-size: 1.2em;
-    color: #fff;
-    text-align: center;
-  }
-  .logo {
-    max-width: 450px;
-    max-width: 450px;
+  height: 100vh;
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 40px);
+    p {
+      font-size: 1.2em;
+      color: #fff;
+      text-align: center;
+    }
+    .logo {
+      max-width: 450px;
+      max-width: 450px;
+    }
   }
 }
 
 @media screen and (max-width: 700px) {
-  .home {
+  .content {
     p {
       font-size: 1em;
     }
@@ -32,7 +34,7 @@
 }
 
 @media screen and (max-width: 400px) {
-  .home {
+  .content {
     p {
       font-size: 1em;
     }

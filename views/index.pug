@@ -1,10 +1,13 @@
 extends layout
+include mixins/nav
 
 block content
   .home.barba-container
-    p MEET
-    img.logo(src='/images/photos/logo 512X512 white.png' alt='Montaigne Smart Business Solutions')
-    p &nbsp;
-      span.typed-element
-    a(href='/skillset')
-      img.arrow(src='/images/photos/arrow.png')
+    +nav()
+    .content
+      p MEET
+      img.logo(src='/images/photos/logo 512X512 white.png' alt='Montaigne Smart Business Solutions')
+      p &nbsp;
+        span.typed-element
+      a(href='/skillset')
+        img.arrow(src='/images/photos/arrow.png')

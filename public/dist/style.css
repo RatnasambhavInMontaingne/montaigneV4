@@ -413,17 +413,22 @@ template {
 
 .nav {
   overflow: hidden;
-  background-color: #fff;
+  background: none;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: space-evenly;
       justify-content: space-evenly;
   -ms-flex-align: center;
       align-items: center;
-  height: 40px; }
+  justify-self: flex-start;
+  height: 40px;
+  width: 100vw;
+  position: relative;
+  top: -1.5px; }
   .nav a {
     display: block;
-    color: #000;
+    width: 100%;
+    color: #fff;
     text-align: center;
     padding: 0.5em 0;
     text-decoration: none;
@@ -432,10 +437,12 @@ template {
     text-transform: uppercase; }
     .nav a svg {
       fill: currentColor; }
-  .nav .active {
-    text-decoration: line-through; }
+  .nav a.active {
+    background-color: #fff;
+    color: #000; }
   .nav .icon {
-    display: none; }
+    display: none;
+    width: auto; }
 
 @media screen and (max-width: 960px) {
   .nav {
@@ -444,7 +451,8 @@ template {
     height: auto; }
     .nav a {
       padding: 0.5em 0;
-      margin: 0 0.5em; }
+      margin: 0 0.5em;
+      width: auto; }
       .nav a:not(:first-child) {
         display: none; }
   .nav a.icon {
@@ -478,36 +486,37 @@ template {
 .home {
   background-image: url("/images/photos/home-page-bg_low.jpg");
   background-size: cover;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  height: calc(100vh - 37px);
-  padding: 0.5em 0;
-  animation: bg-slide 200s linear infinite !important; }
-  .home p {
-    font-size: 1.2em;
-    color: #fff;
-    text-align: center; }
-  .home .logo {
-    max-width: 450px;
-    max-width: 450px; }
+  animation: bg-slide 200s linear infinite !important;
+  height: 100vh; }
+  .home .content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    height: calc(100vh - 40px); }
+    .home .content p {
+      font-size: 1.2em;
+      color: #fff;
+      text-align: center; }
+    .home .content .logo {
+      max-width: 450px;
+      max-width: 450px; }
 
 @media screen and (max-width: 700px) {
-  .home p {
+  .content p {
     font-size: 1em; }
-  .home .logo {
+  .content .logo {
     max-width: 320px;
     max-height: 320px; } }
 
 @media screen and (max-width: 400px) {
-  .home p {
+  .content p {
     font-size: 1em; }
-  .home .logo {
+  .content .logo {
     max-width: 250px;
     max-height: 250px; } }
 

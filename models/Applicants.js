@@ -10,9 +10,9 @@ applicantsSchema = new mongoose.Schema({
     trim: true,
     required: 'Please enter your name'
   },
-  resume: {
+  resumePath: {
     type: String
-  }
+  },
   number: {
     type: String,
     trim: true,

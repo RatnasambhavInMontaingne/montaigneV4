@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1657,7 +1657,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 });
 ;
 //# sourceMappingURL=axios.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7), __webpack_require__(0)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6), __webpack_require__(0)(module)))
 
 /***/ }),
 /* 2 */
@@ -3808,8 +3808,7 @@ function factory(window, EvEmitter) {
 });
 
 /***/ }),
-/* 4 */,
-/* 5 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4905,13 +4904,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)(module)))
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5104,19 +5103,19 @@ process.umask = function () {
 };
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(6);
+__webpack_require__(5);
 
 var _barba = __webpack_require__(2);
 
 var _barba2 = _interopRequireDefault(_barba);
 
-var _typed = __webpack_require__(5);
+var _typed = __webpack_require__(4);
 
 var _typed2 = _interopRequireDefault(_typed);
 
@@ -5259,8 +5258,9 @@ window.onload = function () {
 };
 
 _barba2.default.Dispatcher.on('transitionCompleted', function () {
-    if ($('.typed-element').length) {
+    if ($('.home').length) {
         var typed = new _typed2.default('.typed-element', typedOptions);
+        document.querySelector('#nav > a:nth-child(1)').classList.add('active');
     }
 
     if ($('.blog_grid').length) {

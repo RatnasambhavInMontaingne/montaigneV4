@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const getInTouchController = require('../controllers/getInTouchController')
 const newsletterSubscriberController = require('../controllers/newsletterSubscriberController')
+const applicantController = require('../controllers/applicantController')
 
 router.get('/', (req, res) => {
   res.render('index', {title: 'Welcome'});
@@ -21,14 +22,16 @@ router.get('/our_story', (req, res) => {
 
 router.get('/blog', (req, res) => {
   res.render('blog', {title: 'Blog'});
-})
+});
 
 router.get('/working_with_us', (req, res) => {
   res.render('working_with_us', {title: 'Working With Us'});
-})
+});
 
 router.post('/get_in_touch', getInTouchController.addToDB);
 
 router.post('/newsletter/subscribe', newsletterSubscriberController.subscribe);
+
+router.post('/working_with_us', applicantController.uploadResume, applicantController.apply);
 
 module.exports = router;

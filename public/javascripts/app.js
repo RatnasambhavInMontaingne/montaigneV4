@@ -136,8 +136,9 @@ window.onload = function() {
 }
 
 Barba.Dispatcher.on('transitionCompleted', function() {
-    if($('.typed-element').length) {
+    if($('.home').length) {
         const typed = new Typed('.typed-element', typedOptions);
+        document.querySelector('#nav > a:nth-child(1)').classList.add('active');
     }
 
     if($('.blog_grid').length) {
