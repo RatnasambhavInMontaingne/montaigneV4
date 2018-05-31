@@ -1,19 +1,22 @@
 .working_with_us {
   .top_section {
-    display: flex;
-    justify-content: center;
     height: 90vh;
     background: url('/images/photos/wrkng-with-us.jpg') center center;
     background-size: cover;
-    p {
-      text-align: center;
-      margin: 7em 0;
-      width: 70%;
-      color: #fff;
-      font-size: 1.3em;
-      line-height: 1.5;
-      span {
-        background: rgba(0,0,0,0.5);
+    .top_text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        text-align: center;
+        margin: 7em 0;
+        width: 70%;
+        color: #fff;
+        font-size: 1.3em;
+        line-height: 1.5;
+        span {
+          background: rgba(0,0,0,0.5);
+        }
       }
     }
   }
@@ -128,7 +131,7 @@
 
 @media screen and (max-width: 957px) {
   .working_with_us {
-    .top_section {
+    .top_section .top_text {
       height: auto;
       padding: 1em;
       p {
@@ -163,7 +166,7 @@
 
 @media screen and (max-width: 500px) {
   .working_with_us {
-    .top_section {
+    .top_text {
       p {
         font-size: 1em;
         margin: 2em 0;

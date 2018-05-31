@@ -73,10 +73,10 @@
       }
     }
   }
-  .marketing {
+  .product_marketing {
     .image_section {
       .image {
-        background: url('https://source.unsplash.com/random/4') center center;
+        background: url('/images/photos/product_marketing.jpg') center center;
         background-size: cover;
       }
     }
@@ -85,6 +85,14 @@
     .image_section {
       .image {
         background: url('https://source.unsplash.com/random/5') center center;
+        background-size: cover;
+      }
+    }
+  }
+  .content_engineering {
+    .image_section {
+      .image {
+        background: url('https://source.unsplash.com/random/6') center center;
         background-size: cover;
       }
     }

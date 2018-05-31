@@ -1,34 +1,36 @@
 extends layout
 include mixins/social
-//- include mixins/teamMember
+include mixins/nav
 
 block content
   .our_story.barba-container
-    .top_section
-      .top_section-text
-        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor in nemo facilis accusantium eligendi officiis explicabo illum, perspiciatis ratione. Magnam, praesentium? Cum, eos commodi similique amet possimus aliquam. Pariatur repellat obcaecati omnis molestias voluptas nemo aliquid accusantium laudantium reiciendis ipsum.
-        p Fugit, nemo inventore! Repudiandae amet cum illum, aspernatur porro quod ad maiores quisquam pariatur delectus eaque at quo in culpa nesciunt quos ex minima itaque est accusantium, non tempore officia!
-    .team
-      .team--info
-        .team--info-header
-          p Meet The Team
-        .team--info-body.animated
-          .team--info-body-left
-            p.first-name Ratnasambhav
-            p.last-name Priyadarshi
-            em.designation Developer
-          .team--info-body-right
-            p.details Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate, impedit, repudiandae, accusamus officiis officia unde error necessitatibus beatae dignissimos temporibus laudantium tempore autem reprehenderit ipsa nisi labore expedita mollitia?
-            .member-social
-              a(href='#')!= h.icon('github')
-              a(href='#')!= h.icon('linkedin')
-              a(href='#')!= h.icon('twitter')
-              a(href='#')!= h.icon('instagram')
-      .team--slider
-          .member-image.active(id='member-1-image' onclick="changeMember('#member-1-image', 0)")
-          .member-image(id='member-2-image' onclick="changeMember('#member-2-image', 0)")
-          .member-image(id='member-3-image' onclick="changeMember('#member-3-image', 2)")
-          .member-image(id='member-4-image' onclick="changeMember('#member-4-image', 3)")
-          .member-image(id='member-5-image' onclick="changeMember('#member-5-image', 4)")
-          .member-image(id='member-6-image' onclick="changeMember('#member-6-image', 5)")
-          .member-image(id='member-7-image' onclick="changeMember('#member-7-image', 6)")
+    +nav()
+    .content
+      .top_section
+        .top_section-text
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor in nemo facilis accusantium eligendi officiis explicabo illum, perspiciatis ratione. Magnam, praesentium? Cum, eos commodi similique amet possimus aliquam. Pariatur repellat obcaecati omnis molestias voluptas nemo aliquid accusantium laudantium reiciendis ipsum.
+          p Fugit, nemo inventore! Repudiandae amet cum illum, aspernatur porro quod ad maiores quisquam pariatur delectus eaque at quo in culpa nesciunt quos ex minima itaque est accusantium, non tempore officia!
+      .team
+        .team--info
+          .team--info-header
+            p Meet The Team
+          .team--info-body.animated
+            .team--info-body-left
+              p.first-name Ratnasambhav
+              p.last-name Priyadarshi
+              em.designation Developer
+            .team--info-body-right
+              p.details Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate, impedit, repudiandae, accusamus officiis officia unde error necessitatibus beatae dignissimos temporibus laudantium tempore autem reprehenderit ipsa nisi labore expedita mollitia?
+              .member-social
+                a(href='#')!= h.icon('github')
+                a(href='#')!= h.icon('linkedin')
+                a(href='#')!= h.icon('twitter')
+                a(href='#')!= h.icon('instagram')
+        .team--slider
+            .member-image.active(id='member-1-image' onclick="changeMember('#member-1-image', 0)")
+            .member-image(id='member-2-image' onclick="changeMember('#member-2-image', 0)")
+            .member-image(id='member-3-image' onclick="changeMember('#member-3-image', 2)")
+            .member-image(id='member-4-image' onclick="changeMember('#member-4-image', 3)")
+            .member-image(id='member-5-image' onclick="changeMember('#member-5-image', 4)")
+            .member-image(id='member-6-image' onclick="changeMember('#member-6-image', 5)")
+            .member-image(id='member-7-image' onclick="changeMember('#member-7-image', 6)")

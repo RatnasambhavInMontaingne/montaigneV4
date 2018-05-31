@@ -1,45 +1,56 @@
 extends layout
 include mixins/social
+include mixins/nav
 
 block content
   .skillset.barba-container
-    .section.incubation
-      .image_section
-        .image
-      .text_section
-        img.illustration(src='https://source.unsplash.com/random/100x100')
-        span.header Incubation
-        span.description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium corrupti quod fugiat sit voluptatum provident delectus quis, earum reiciendis illo perspiciatis dicta! Assumenda consectetur perspiciatis ipsam error corporis, libero veniam?
-        a.link(href='/get_in_touch') Let's Talk!
-    .section.creative-designing
-      .text_section
-        img.illustration(src='https://source.unsplash.com/random/100x100')
-        span.header Creative Designing
-        span.description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium corrupti quod fugiat sit voluptatum provident delectus quis, earum reiciendis illo perspiciatis dicta! Assumenda consectetur perspiciatis ipsam error corporis, libero veniam?
-        a.link(href='/get_in_touch') Let's Talk!
-      .image_section
-        .image
-    .section.ui_ux
-      .image_section
-        .image
-      .text_section
-        img.illustration(src='https://source.unsplash.com/random/100x100')
-        span.header UI/UX
-        span.description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium corrupti quod fugiat sit voluptatum provident delectus quis, earum reiciendis illo perspiciatis dicta! Assumenda consectetur perspiciatis ipsam error corporis, libero veniam?
-        a.link(href='/get_in_touch') Let's Talk!
-    .section.marketing
-      .text_section
-        img.illustration(src='https://source.unsplash.com/random/100x100')
-        span.header Content Engineering
-        span.description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium corrupti quod fugiat sit voluptatum provident delectus quis, earum reiciendis illo perspiciatis dicta! Assumenda consectetur perspiciatis ipsam error corporis, libero veniam?
-        a.link(href='/get_in_touch') Let's Talk!
-      .image_section
-        .image
-    .section.predictive_analytics
-      .image_section
-        .image
-      .text_section
-        img.illustration(src='https://source.unsplash.com/random/100x100')
-        span.header Predictive Marketing
-        span.description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium corrupti quod fugiat sit voluptatum provident delectus quis, earum reiciendis illo perspiciatis dicta! Assumenda consectetur perspiciatis ipsam error corporis, libero veniam?
-        a.link(href='/get_in_touch') Let's Talk!
+    +nav()
+    .content
+      .section.incubation
+        .image_section
+          .image
+        .text_section
+          img.illustration(src='https://source.unsplash.com/random/100x100')
+          span.header Incubation
+          span.description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium corrupti quod fugiat sit voluptatum provident delectus quis, earum reiciendis illo perspiciatis dicta! Assumenda consectetur perspiciatis ipsam error corporis, libero veniam?
+          a.link(href='/get_in_touch') Let's Talk!
+      .section.creative-designing
+        .text_section
+          img.illustration(src='https://source.unsplash.com/random/100x100')
+          span.header Creative Designing
+          span.description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium corrupti quod fugiat sit voluptatum provident delectus quis, earum reiciendis illo perspiciatis dicta! Assumenda consectetur perspiciatis ipsam error corporis, libero veniam?
+          a.link(href='/get_in_touch') Let's Talk!
+        .image_section
+          .image
+      .section.ui_ux
+        .image_section
+          .image
+        .text_section
+          img.illustration(src='https://source.unsplash.com/random/100x100')
+          span.header UI/UX
+          span.description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium corrupti quod fugiat sit voluptatum provident delectus quis, earum reiciendis illo perspiciatis dicta! Assumenda consectetur perspiciatis ipsam error corporis, libero veniam?
+          a.link(href='/get_in_touch') Let's Talk!
+      .section.product_marketing
+        .text_section
+          img.illustration(src='https://source.unsplash.com/random/100x100')
+          span.header Product Marketing
+          span.description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium corrupti quod fugiat sit voluptatum provident delectus quis, earum reiciendis illo perspiciatis dicta! Assumenda consectetur perspiciatis ipsam error corporis, libero veniam?
+          a.link(href='/get_in_touch') Let's Talk!
+        .image_section
+          .image
+      .section.predictive_analytics
+        .image_section
+          .image
+        .text_section
+          img.illustration(src='https://source.unsplash.com/random/100x100')
+          span.header Predictive Analysis
+          span.description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium corrupti quod fugiat sit voluptatum provident delectus quis, earum reiciendis illo perspiciatis dicta! Assumenda consectetur perspiciatis ipsam error corporis, libero veniam?
+          a.link(href='/get_in_touch') Let's Talk!
+      .section.content_engineering
+        .text_section
+          img.illustration(src='https://source.unsplash.com/random/100x100')
+          span.header Content Engineering
+          span.description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium corrupti quod fugiat sit voluptatum provident delectus quis, earum reiciendis illo perspiciatis dicta! Assumenda consectetur perspiciatis ipsam error corporis, libero veniam?
+          a.link(href='/get_in_touch') Let's Talk!
+        .image_section
+          .image

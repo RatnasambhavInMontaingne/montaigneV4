@@ -22,25 +22,29 @@
 }
 
 @media screen and (max-width: 700px) {
-  .content {
-    p {
-      font-size: 1em;
-    }
-    .logo {
-      max-width: 320px;
-      max-height: 320px;
+  .home {
+    .content {
+      p {
+        font-size: 1em;
+      }
+      .logo {
+        max-width: 320px;
+        max-height: 320px;
+      }
     }
   }
 }
 
 @media screen and (max-width: 400px) {
-  .content {
-    p {
-      font-size: 1em;
-    }
-    .logo {
-      max-width: 250px;
-      max-height: 250px;
+  .home {
+    .content {
+      p {
+        font-size: 1em;
+      }
+      .logo {
+        max-width: 250px;
+        max-height: 250px;
+      }
     }
   }
 }

@@ -1,9 +1,12 @@
 extends layout
+include mixins/nav
 
 block content
   .working_with_us.barba-container
     .top_section
-      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam molestias laudantium, tempore distinctio iure error aspernatur natus quo eos, officiis quod perspiciatis a harum nihil unde deleniti laboriosam deserunt sit reprehenderit minus? Eligendi nemo dignissimos ullam voluptates molestias magni ipsum odit veritatis cumque? Rem labore neque nobis consequuntur et quo nihil dolorem. Mollitia ducimus facere enim nesciunt eveniet aspernatur, nulla, unde deleniti voluptas quos cupiditate odit sapiente libero, cumque praesentium ullam eos totam!
+      +nav()
+      .top_text
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam molestias laudantium, tempore distinctio iure error aspernatur natus quo eos, officiis quod perspiciatis a harum nihil unde deleniti laboriosam deserunt sit reprehenderit minus? Eligendi nemo dignissimos ullam voluptates molestias magni ipsum odit veritatis cumque? Rem labore neque nobis consequuntur et quo nihil dolorem. Mollitia ducimus facere enim nesciunt eveniet aspernatur, nulla, unde deleniti voluptas quos cupiditate odit sapiente libero, cumque praesentium ullam eos totam!
     .form_section
       .hero_text
         .hero_text--line
