@@ -1,10 +1,9 @@
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
-const slug = require('slugs');
-const validator = require('validator')
-const dompurify = require('dompurify')
+const validator = require('validator');
+const dompurify = require('dompurify');
 
-const validateContactNumber = number => validator.isMobilePhone(number, 'any')
+const validateContactNumber = number => validator.isMobilePhone(number, 'any');
 
 getInTouchSchema = new mongoose.Schema({
   name: {

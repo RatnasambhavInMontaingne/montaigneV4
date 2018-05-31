@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const getInTouchController = require('../controllers/getInTouchController')
+const newsletterSubscriberController = require('../controllers/newsletterSubscriberController')
 
 router.get('/', (req, res) => {
   res.render('index', {title: 'Welcome'});
@@ -28,5 +29,6 @@ router.get('/working_with_us', (req, res) => {
 
 router.post('/get_in_touch', getInTouchController.addToDB);
 
+router.post('/newsletter/subscribe', newsletterSubscriberController.subscribe);
 
 module.exports = router;

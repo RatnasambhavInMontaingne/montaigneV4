@@ -4,6 +4,7 @@ html
     title= `${title} | ${h.siteName}`
     link(rel='stylesheet', href='/dist/style.css')
     link(rel='stylesheet', href='/dist/animate.min.css')
+    link(rel='stylesheet', href='/dist/snackbar.min.css')
     link(rel="shortcut icon" type="image/png" href="/images/photos/logo 512X512 black.png")
     meta(name="viewport" content="width=device-width, initial-scale=1")
   body
@@ -17,14 +18,13 @@ html
         a(href='/get_in_touch') Get In Touch
         a.icon(href='javascript:void(0)')!= h.icon('baseline-menu-24px')
 
-    block messages
-
     .content(id="barba-wrapper")
       block content
 
     block scripts
       script(src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous")
       script(src="/dist/App.bundle.js")
+      script(src="/dist/snackbar.min.js")
       script
         include mixins/toggleNav.js
         include mixins/changeMember.js
