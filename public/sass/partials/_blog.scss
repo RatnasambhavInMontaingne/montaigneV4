@@ -1,11 +1,10 @@
 .blog {
-  // background: url('/images/photos/blogBG2.jpg') center center fixed;
-  // background-size: cover;
+  font-family: 'IBM Plex Sans', sans-serif;
   .blog_grid {
     display: grid;
     grid-gap: 2em;
-    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
-    grid-auto-rows: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
+    grid-auto-rows: 10px;
     padding: 0.5em 2em 2em 2em;
     perspective: 1000px;
     &--item {
@@ -32,10 +31,12 @@
         &--image {
           border-top-left-radius: 5px;
           border-top-right-radius: 5px;
-          width: 100%;
         }
         &--desc {
           padding: 1em;
+          font-size: 1.3em;
+          color: #000;
+          text-decoration: none;
         }
       }
     }
@@ -48,5 +49,11 @@
         font-size: 1.2em;
       }
     }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .blog .blog_grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
   }
 }

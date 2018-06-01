@@ -1,4 +1,5 @@
 .skillset {
+  font-family: 'IBM Plex Sans', sans-serif;
   display: flex;
   flex-direction: column;
   .section {
@@ -27,9 +28,9 @@
       justify-content: center;
       align-items: center;
       .illustration {
-        border-radius: 50%;
         margin-bottom: 1em;
-        box-shadow: 10px 10px 30px -10px rgba(0,0,0,0.45);
+        max-width: 50px;
+        max-height: 50px;
       }
       .header {
         text-align: center;
@@ -68,7 +69,7 @@
   .ui_ux {
     .image_section {
       .image {
-        background: url('https://source.unsplash.com/random/3') center center;
+        background: url('/images/photos/ui_ux.jpg') center center;
         background-size: cover;
       }
     }

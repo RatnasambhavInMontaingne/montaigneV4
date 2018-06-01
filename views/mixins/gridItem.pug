@@ -1,6 +1,5 @@
 mixin gridItem(item)
   .blog_grid--item
     .content
-      //- a.content--header(href='#')= item.title
       img.content--image(src=`${item.image}`)
-      .content--desc= item.desc
+      a.content--desc(href="#")= item.desc

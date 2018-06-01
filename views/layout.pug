@@ -7,6 +7,10 @@ html
     link(rel='stylesheet', href='/dist/snackbar.min.css')
     link(rel="shortcut icon" type="image/png" href="/images/photos/logo 512X512 black.png")
     meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="description" content=`${description}`)
+    meta(name="keywords" content=`${keywords}`)
+    script(src="/seo/josn_ld.js" type="application/ld+json")
+    script(src="/seo/gtm_head.js")
   body
 
     .content(id="barba-wrapper")
@@ -16,7 +20,6 @@ html
       script(src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous")
       script(src="/dist/App.bundle.js")
       script(src="/dist/snackbar.min.js")
-      script(src="/json-ld/josn_ld.js" type="application/ld+json")
       script
-        //- include mixins/toggleNav.js
         include mixins/changeMember.js
+      | <!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCGP5PW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) -->

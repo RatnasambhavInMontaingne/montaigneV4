@@ -1,4 +1,5 @@
 .our_story {
+  font-family: 'IBM Plex Sans', sans-serif;
   .content {
     padding: 2em;
     .top_section {
@@ -49,7 +50,7 @@
               -webkit-text-fill-color: transparent;
             }
             .last-name {
-              margin-bottom: 0.7em;
+              margin-bottom: 0.2em;
             }
             .designation {
               font-size: 1.3em;
@@ -62,8 +63,9 @@
             flex-direction: column;
             align-items: flex-end;
             .details {
-              text-align: right;
-              font-size: 1.2em;
+              text-align: justify;
+              font-size: 1.4em;
+              line-height: 1.2;
             }
             .member-social {
               margin-top: 1em;
@@ -92,7 +94,6 @@
           min-height: 400px;
           min-width: 300px;
           margin: 0 1em;
-          background: url('/images/photos/placeholder.png') center center;
           background-size: cover;
           transition: border 0.5s linear;
         }
@@ -105,6 +106,68 @@
       }
     }
   }
+}
+
+#member-1-image {
+  background: url('/images/photos/teampics/ananya.jpg') center center;
+  background-size: cover;
+}
+#member-2-image {
+  background: url('/images/photos/teampics/rohith.jpg') center center;
+  background-size: cover;
+}
+#member-3-image {
+  background: url('/images/photos/teampics/bushan.jpg') center center;
+  background-size: cover;
+}
+#member-4-image {
+  background: url('/images/photos/teampics/nisha.jpg') center center;
+  background-size: cover;
+}
+#member-5-image {
+  background: url('/images/photos/teampics/ahmed.jpg') center center;
+  background-size: cover;
+}
+#member-6-image {
+  background: url('/images/photos/teampics/narendra.jpg') center center;
+  background-size: cover;
+}
+#member-7-image {
+  background: url('/images/photos/teampics/ratna.jpg') center center;
+  background-size: cover;
+}
+#member-8-image {
+  background: url('/images/photos/teampics/vamsi.jpg') center center;
+  background-size: cover;
+}
+
+.member-social a div.Li {
+  background: url('/images/icons/linkedin.svg') center center;
+  width: 40px;
+  height: 40px;
+  max-height: 40px;
+  max-width: 40px;
+}
+.member-social a div.Fb {
+  background: url('/images/icons/facebook.svg') center center;
+  width: 40px;
+  height: 40px;
+  max-height: 40px;
+  max-width: 40px;
+}
+.member-social a div.Github {
+  background: url('/images/icons/github.svg') center center;
+  width: 40px;
+  height: 40px;
+  max-height: 40px;
+  max-width: 40px;
+}
+.member-social a div.Tw {
+  background: url('/images/icons/twitter.svg') center center;
+  width: 40px;
+  height: 40px;
+  max-height: 40px;
+  max-width: 40px;
 }
 
 @media screen and (max-width: 750px) {
