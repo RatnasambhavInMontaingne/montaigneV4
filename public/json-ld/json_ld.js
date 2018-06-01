@@ -20,5 +20,6 @@
       "Telugu",
       "Hindi"
     ]
-  }
+  },
+  "address": "2-61/C Plot No. 39, Megha Hills, Madhapur, Hyderabad-500081"
 }
