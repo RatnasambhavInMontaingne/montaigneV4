@@ -75,7 +75,7 @@ const memberDetails = [
         social: [
             {
                 icon: 'Github',
-                href: 'https://github.com/narendra-kumawats'
+                href: 'https://github.com/narendra-kumawat'
             },
             {
                 icon: 'Li',
