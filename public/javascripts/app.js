@@ -5,12 +5,17 @@ import Typed from './modules/typed';
 import axios from './modules/axios';
 import imagesLoaded from './modules/imagesloaded.pkgd';
 
+function navbar() {
+  const x = $('#nav');
+  x.toggleClass('responsive');
+}
+
 const typedOptions = {
-    typeSpeed: 40,
+    typeSpeed: 30,
     strings: [
-        'One Stop Shop For All Your Business Needs',
-        'Lorem Ipsum Lorem Ipsum Lorem Ipsum',
-        'One Stop Shop For All Your Business Needs'
+        'Heard of innovation incubated to become invincible businesses? That\'s our forte.',
+        'The road to money is bumpy. Our strategy breathers can get you through though.',
+        'Best work comes from the best team. We\'d love to let that grow.You get the point.'
     ],
     loop: true
 }
@@ -136,6 +141,8 @@ window.onload = function() {
 }
 
 Barba.Dispatcher.on('transitionCompleted', function() {
+    $('#nav').click(navbar);
+
     if($('.home').length) {
         const typed = new Typed('.typed-element', typedOptions);
         $('.nav a').css('color', '#fff');

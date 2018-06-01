@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title= `${title} | ${h.siteName}`
+    title= `${title} | Montaigne Smart Bussiness Solution`
     link(rel='stylesheet', href='/dist/style.css')
     link(rel='stylesheet', href='/dist/animate.min.css')
     link(rel='stylesheet', href='/dist/snackbar.min.css')
@@ -16,6 +16,7 @@ html
       script(src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous")
       script(src="/dist/App.bundle.js")
       script(src="/dist/snackbar.min.js")
+      script(src="/json-ld/josn_ld.js" type="application/ld+json")
       script
-        include mixins/toggleNav.js
+        //- include mixins/toggleNav.js
         include mixins/changeMember.js

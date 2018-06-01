@@ -5129,9 +5129,14 @@ var _imagesloaded2 = _interopRequireDefault(_imagesloaded);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function navbar() {
+    var x = $('#nav');
+    x.toggleClass('responsive');
+}
+
 var typedOptions = {
-    typeSpeed: 40,
-    strings: ['One Stop Shop For All Your Business Needs', 'Lorem Ipsum Lorem Ipsum Lorem Ipsum', 'One Stop Shop For All Your Business Needs'],
+    typeSpeed: 30,
+    strings: ['Heard of innovation incubated to become invincible businesses? That\'s our forte.', 'The road to money is bumpy. Our strategy breathers can get you through though.', 'Best work comes from the best team. We\'d love to let that grow.You get the point.'],
     loop: true
 };
 
@@ -5258,6 +5263,8 @@ window.onload = function () {
 };
 
 _barba2.default.Dispatcher.on('transitionCompleted', function () {
+    $('#nav').click(navbar);
+
     if ($('.home').length) {
         var typed = new _typed2.default('.typed-element', typedOptions);
         $('.nav a').css('color', '#fff');

@@ -593,10 +593,10 @@ template {
         color: #000;
         border-bottom: 2px solid #000; }
   .skillset .incubation .image_section .image {
-    background: url("https://source.unsplash.com/random/1") center center;
+    background: url("/images/photos/incubation.jpg") center center;
     background-size: cover; }
   .skillset .creative-designing .image_section .image {
-    background: url("https://source.unsplash.com/random/2") center center;
+    background: url("/images/photos/creative_designing.jpg") center center;
     background-size: cover; }
   .skillset .ui_ux .image_section .image {
     background: url("https://source.unsplash.com/random/3") center center;
@@ -608,7 +608,7 @@ template {
     background: url("/images/photos/predictive-analysis.jpg") center center;
     background-size: cover; }
   .skillset .content_engineering .image_section .image {
-    background: url("https://source.unsplash.com/random/6") center center;
+    background: url("/images/photos/content_engineering.jpg") center center;
     background-size: cover; }
 
 @media screen and (max-width: 1200px) {
@@ -931,13 +931,18 @@ template {
         max-height: 40px;
         margin: 0 5px; }
 
-.social_wrapper {
+.social {
   width: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
   margin-bottom: 1em; }
+  .social a.social-link.middle {
+    margin: 0 10px;
+    padding: 0 10px;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000; }
 
 @media screen and (max-width: 970px) {
   .get_in_touch .contact_and_form_wrapper {
