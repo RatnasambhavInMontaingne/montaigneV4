@@ -1145,7 +1145,6 @@ template {
 .working_with_us {
   font-family: 'IBM Plex Sans', sans-serif; }
   .working_with_us .top_section {
-    height: 90vh;
     background: url("/images/photos/wrkng-with-us.jpg") center center;
     background-size: cover; }
     .working_with_us .top_section .top_text {
@@ -1167,7 +1166,7 @@ template {
   .working_with_us .form_section {
     display: -ms-flexbox;
     display: flex;
-    background-color: #DB6136;
+    background-color: #DC6136;
     padding: 6em 8em;
     font-family: BebasNeue, Helvetica, Arial, sans-serif; }
     .working_with_us .form_section .hero_text {
@@ -1269,7 +1268,7 @@ template {
     .working_with_us .top_section .top_text p {
       width: auto;
       height: auto;
-      margin: 7em 0; }
+      margin: 5em 0; }
   .working_with_us .form_section {
     -ms-flex-direction: column;
         flex-direction: column; }
@@ -1282,9 +1281,10 @@ template {
     margin-left: 0.3em; } }
 
 @media screen and (max-width: 500px) {
-  .working_with_us .top_text p {
-    font-size: 1em;
-    margin: 2em 0; }
+  .working_with_us .top_section .top_text p {
+    font-size: 1.3em;
+    line-height: 1.2;
+    margin: 1em 0; }
   .working_with_us .form_section .form .resume_section label {
     margin-top: 0.3em; } }
 
