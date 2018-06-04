@@ -2,7 +2,7 @@
   font-family: 'IBM Plex Sans', sans-serif;
   background-image: url('/images/photos/home-page-bg-2.jpg');
   background-size: cover;
-  animation: bg-slide 200s linear infinite !important;
+  animation: bg-slide 400s linear infinite !important;
   height: 100vh;
   .content {
     display: flex;
@@ -14,10 +14,17 @@
       font-size: 1.2em;
       color: #fff;
       text-align: center;
+      margin: 0;
     }
     .logo {
-      max-width: 450px;
-      max-width: 450px;
+      max-width: 350px;
+      max-width: 350px;
+    }
+    .meet {
+      margin-bottom: 1em;
+    }
+    .arrow {
+      margin-top: 1em;
     }
   }
 }

@@ -146,10 +146,10 @@
 
 @media screen and (max-width: 960px) {
   .content .skillset .nav .nav_logo {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    background: url('/images/icons/logo_small_black.png') center center no-repeat;
-    background-size: contain;
+    width: 30px !important;
+    height: 30px !important;
+    margin-right: 10px !important;
+    background: url('/images/icons/logo_small_black.png') center center no-repeat !important;
+    background-size: contain !important;
   }
 }

@@ -14,10 +14,10 @@ const typedOptions = {
     strings: [
         'Heard of innovation incubated to become invincible businesses? That\'s our forte.',
         'The road to money is bumpy. Our strategy breathers can get you through though.',
-        'Best work comes from the best team. We\'d love to let that grow.You get the point.'
+        'Best work comes from the best team. We\'d love to let that grow. You get the point.'
     ],
-    typeSpeed: 60,
-    backDelay: 2000,
+    typeSpeed: 30,
+    backDelay: 3000,
     loop: true
 }
 

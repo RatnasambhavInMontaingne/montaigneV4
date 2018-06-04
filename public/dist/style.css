@@ -530,7 +530,7 @@ template {
   font-family: 'IBM Plex Sans', sans-serif;
   background-image: url("/images/photos/home-page-bg-2.jpg");
   background-size: cover;
-  animation: bg-slide 200s linear infinite !important;
+  animation: bg-slide 400s linear infinite !important;
   height: 100vh; }
   .home .content {
     display: -ms-flexbox;
@@ -545,10 +545,15 @@ template {
     .home .content p {
       font-size: 1.2em;
       color: #fff;
-      text-align: center; }
+      text-align: center;
+      margin: 0; }
     .home .content .logo {
-      max-width: 450px;
-      max-width: 450px; }
+      max-width: 350px;
+      max-width: 350px; }
+    .home .content .meet {
+      margin-bottom: 1em; }
+    .home .content .arrow {
+      margin-top: 1em; }
 
 @media screen and (max-width: 700px) {
   .home .content p {
@@ -678,114 +683,115 @@ template {
 
 @media screen and (max-width: 960px) {
   .content .skillset .nav .nav_logo {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    background: url("/images/icons/logo_small_black.png") center center no-repeat;
-    background-size: contain; } }
+    width: 30px !important;
+    height: 30px !important;
+    margin-right: 10px !important;
+    background: url("/images/icons/logo_small_black.png") center center no-repeat !important;
+    background-size: contain !important; } }
 
 .our_story {
   font-family: 'IBM Plex Sans', sans-serif; }
-  .our_story .content {
-    padding: 2em; }
-    .our_story .content .top_section {
-      box-shadow: inset 0px 5px 10px 2px rgba(0, 0, 0, 0.45);
-      height: 450px;
-      background: url("/images/photos/our-story-bg.jpg") center center;
-      background-size: cover;
-      padding: 2em 0 0 2em; }
-      .our_story .content .top_section-text {
-        width: 60%;
-        font-size: 1.3em;
-        line-height: 1.2; }
-    .our_story .content .team {
+  .our_story .content .top_section {
+    padding: 0;
+    min-height: 450px;
+    height: auto;
+    background: url("/images/photos/our-story-bg.jpg") center center;
+    background-size: cover; }
+    .our_story .content .top_section-text {
+      margin: 2em 0 0 2em;
+      width: 60%;
+      font-size: 1.3em;
+      line-height: 1.2; }
+  .our_story .content .team {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    .our_story .content .team--info {
       width: 100%;
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-      .our_story .content .team--info {
-        width: 100%;
-        display: -ms-flexbox;
-        display: flex; }
-        .our_story .content .team--info-header {
-          margin-right: 3.5em; }
-          .our_story .content .team--info-header p {
-            background: #000;
-            padding: 0.5em;
-            color: #fff;
-            box-sizing: border-box;
-            margin: 0;
-            font-size: 1.5em;
-            font-weight: 300;
-            -webkit-writing-mode: vertical-lr;
-                -ms-writing-mode: tb-lr;
-                    writing-mode: vertical-lr; }
-        .our_story .content .team--info-body {
-          padding: 2em;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-          .our_story .content .team--info-body-left {
-            margin-right: 1em; }
-            .our_story .content .team--info-body-left .first-name, .our_story .content .team--info-body-left .last-name {
-              padding: 0;
-              margin: 0;
-              font-size: 3em;
-              font-weight: 700; }
-            .our_story .content .team--info-body-left .first-name {
-              background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent; }
-            .our_story .content .team--info-body-left .last-name {
-              margin-bottom: 0.2em; }
-            .our_story .content .team--info-body-left .designation {
-              font-size: 1.3em;
-              font-weight: 300; }
-          .our_story .content .team--info-body-right {
-            width: 60%;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-direction: column;
-                flex-direction: column;
-            -ms-flex-align: end;
-                align-items: flex-end; }
-            .our_story .content .team--info-body-right .details {
-              text-align: justify;
-              font-size: 1.4em;
-              line-height: 1.2; }
-            .our_story .content .team--info-body-right .member-social {
-              margin-top: 1em;
-              display: -ms-flexbox;
-              display: flex; }
-              .our_story .content .team--info-body-right .member-social a {
-                text-decoration: none;
-                color: #000;
-                margin-right: 1em; }
-                .our_story .content .team--info-body-right .member-social a svg {
-                  width: 30px;
-                  height: 30px; }
-      .our_story .content .team--slider {
-        width: 100%;
-        height: 400px;
-        overflow-x: scroll;
+      margin-bottom: 0.5em; }
+      .our_story .content .team--info-header {
+        margin-right: 3.5em; }
+        .our_story .content .team--info-header p {
+          background: #000;
+          padding: 0.5em;
+          color: #fff;
+          box-sizing: border-box;
+          margin: 0;
+          font-size: 1.5em;
+          font-weight: 300;
+          -webkit-writing-mode: vertical-lr;
+              -ms-writing-mode: tb-lr;
+                  writing-mode: vertical-lr; }
+      .our_story .content .team--info-body {
+        padding: 0 2em;
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-direction: row;
-            flex-direction: row;
-        -ms-flex-align: center;
-            align-items: center; }
-        .our_story .content .team--slider .member-image {
-          min-height: 400px;
-          min-width: 300px;
-          margin: 0 1em;
-          background-size: cover;
-          transition: border 0.25s linear; }
-        .our_story .content .team--slider .member-image.active {
-          border: 10px solid gold; }
-        .our_story .content .team--slider .member-1 {
-          margin-left: 0; }
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+        .our_story .content .team--info-body-left {
+          margin-right: 1em; }
+          .our_story .content .team--info-body-left .first-name, .our_story .content .team--info-body-left .last-name {
+            padding: 0;
+            margin: 0;
+            font-size: 3em;
+            font-weight: 700; }
+          .our_story .content .team--info-body-left .first-name {
+            background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; }
+          .our_story .content .team--info-body-left .last-name {
+            margin-bottom: 0.2em; }
+          .our_story .content .team--info-body-left .designation {
+            font-size: 1.3em;
+            font-weight: 300; }
+        .our_story .content .team--info-body-right {
+          width: 60%;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column;
+              flex-direction: column;
+          -ms-flex-align: end;
+              align-items: flex-end; }
+          .our_story .content .team--info-body-right .details {
+            text-align: justify;
+            font-size: 1.4em;
+            line-height: 1.2; }
+          .our_story .content .team--info-body-right .member-social {
+            margin-top: 1em;
+            display: -ms-flexbox;
+            display: flex; }
+            .our_story .content .team--info-body-right .member-social a {
+              text-decoration: none;
+              color: #000;
+              margin-right: 1em; }
+              .our_story .content .team--info-body-right .member-social a svg {
+                width: 30px;
+                height: 30px; }
+    .our_story .content .team--slider {
+      margin-bottom: 1em;
+      width: 100%;
+      height: 400px;
+      overflow-x: scroll;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-align: center;
+          align-items: center; }
+      .our_story .content .team--slider .member-image {
+        min-height: 400px;
+        min-width: 300px;
+        margin: 1em;
+        background-size: cover;
+        transition: border 0.25s linear; }
+      .our_story .content .team--slider .member-image.active {
+        border: 10px solid gold; }
+      .our_story .content .team--slider .member-1 {
+        margin-left: 0; }
 
 #member-1-image {
   background: url("/images/photos/teampics/rohith.jpg") center center;
@@ -849,10 +855,12 @@ template {
 
 @media screen and (max-width: 750px) {
   .our_story .content .top_section {
-    height: auto;
-    padding: 5px; }
+    width: 100%; }
     .our_story .content .top_section-text {
-      width: 100%; } }
+      width: 90%;
+      font-size: 1.2em;
+      width: 100%;
+      margin: 1em 0.5em; } }
 
 @media screen and (max-width: 850px) {
   .our_story .content .team--info {
@@ -870,7 +878,7 @@ template {
             -ms-writing-mode: inherit;
                 writing-mode: inherit; }
     .our_story .content .team--info-body {
-      padding: 0;
+      padding: 0 0.3em;
       width: 100%;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1149,9 +1157,10 @@ template {
   .blog .blog_grid {
     display: -ms-grid;
     display: grid;
+    margin-top: 2em;
     grid-gap: 2em;
-    -ms-grid-columns: (minmax(500px, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-auto-rows: 10px;
     padding: 0.5em 2em 2em 2em;
     perspective: 1000px; }
@@ -1198,6 +1207,14 @@ template {
   .blog .blog_grid {
     -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); } }
+
+@media screen and (max-width: 960px) {
+  .content .blog .nav .nav_logo {
+    width: 30px !important;
+    height: 30px !important;
+    margin-right: 10px !important;
+    background: url("/images/icons/logo_small_black.png") center center no-repeat !important;
+    background-size: contain !important; } }
 
 .working_with_us {
   font-family: 'IBM Plex Sans', sans-serif; }
