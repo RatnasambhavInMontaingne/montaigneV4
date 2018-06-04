@@ -11,12 +11,13 @@ function navbar() {
 }
 
 const typedOptions = {
-    typeSpeed: 30,
     strings: [
         'Heard of innovation incubated to become invincible businesses? That\'s our forte.',
         'The road to money is bumpy. Our strategy breathers can get you through though.',
         'Best work comes from the best team. We\'d love to let that grow.You get the point.'
     ],
+    typeSpeed: 60,
+    backDelay: 2000,
     loop: true
 }
 
