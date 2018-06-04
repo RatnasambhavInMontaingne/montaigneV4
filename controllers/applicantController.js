@@ -7,7 +7,7 @@ const Applicants = mongoose.model('Applicants');
 const storage = multer.diskStorage({
   destination: './public/uploads/resume',
   filename: function (req, file, next) {
-    const fileName = req.body.name + ' - ' + file.originalname
+    const fileName = Date.now() + ' - ' + file.originalname;
     next(null, fileName);
   }
 });
@@ -41,6 +41,6 @@ exports.apply = async (req, res) => {
     const response = await (new Applicants(data)).save();
     res.json({ message: 'Thank you for applying!' });
   } catch (error) {
-    res.end(error);
+    res.json(error);
   }
 }

@@ -16,14 +16,18 @@ const memberDetails = [
         ]
     },
     {
-        firstName: 'Ahmed',
-        lastName: 'Aleemuddin',
-        designation: 'Lead Developer',
-        details: 'At Montaigne, a motivated Ahmed develops and manages designs and functionalities of websites and servers with his inner creativity and multitasking to create something out-of-the-box! The early bird, always sits on the bean bag, watches Mr.Bean and loves binging comedy shows.',
+        firstName: 'D. Lakshmi Krishna',
+        lastName: 'Bhushan',
+        designation: 'Marketing Strategist',
+        details: 'The master of strategy at Montaigne. Making the right moves-in chess and in marketing is what makes him the right fit for the role. Additionally, he eats a lot of chicken and loves drinking a bottle of Tang every day.',
         social: [
             {
                 icon: 'Li',
-                href: 'https://www.linkedin.com/in/ahmed-aleemuddin-2b5392117'
+                href: 'https://www.linkedin.com/in/lakshmi-krishna-7034617a'
+            },
+            {
+                icon: 'Tw',
+                href: 'https://twitter.com/lakshmikrisna?s=09'
             }
         ]
     },
@@ -40,6 +44,18 @@ const memberDetails = [
         ]
     },
     {
+        firstName: 'Ahmed',
+        lastName: 'Aleemuddin',
+        designation: 'Lead Developer',
+        details: 'At Montaigne, a motivated Ahmed develops and manages designs and functionalities of websites and servers with his inner creativity and multitasking to create something out-of-the-box! The early bird, always sits on the bean bag, watches Mr.Bean and loves binging comedy shows.',
+        social: [
+            {
+                icon: 'Li',
+                href: 'https://www.linkedin.com/in/ahmed-aleemuddin-2b5392117'
+            }
+        ]
+    },
+    {
         firstName: 'Narendra',
         lastName: 'Kumawat',
         designation: 'Product Specialist',
@@ -52,22 +68,6 @@ const memberDetails = [
             {
                 icon: 'Li',
                 href: 'https://www.linkedin.com/in/narendra-kumawat-a1bb95100/'
-            }
-        ]
-    },
-    {
-        firstName: 'D. Lakshmi Krishna',
-        lastName: 'Bhushan',
-        designation: 'Marketing Strategist',
-        details: 'The master of strategy at Montaigne. Making the right moves-in chess and in marketing is what makes him the right fit for the role. Additionally, he eats a lot of chicken and loves drinking a bottle of Tang every day.',
-        social: [
-            {
-                icon: 'Li',
-                href: 'https://www.linkedin.com/in/lakshmi-krishna-7034617a'
-            },
-            {
-                icon: 'Tw',
-                href: 'https://twitter.com/lakshmikrisna?s=09'
             }
         ]
     },

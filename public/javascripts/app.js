@@ -44,6 +44,41 @@ function resizeAllAfterImageLoad() {
     if(allItems) allItems.forEach(item => imagesLoaded(item, resizeItemAfterImageLoad));
 }
 
+function workingWithUsSubmitHandler() {
+    const working_with_us_form = document.working_with_us;
+    working_with_us_form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const formData = new FormData();
+        const resumeInput = document.querySelector('#resume');
+        formData.append('resume', resumeInput.files[0]);
+        formData.append('name', this.name.value);
+        formData.append('number', this.number.value);
+        formData.append('email', this.email.value);
+        formData.append('interest', this.interest.value);
+        try {
+            const response = await axios.post('/working_with_us', formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            });
+            Snackbar.show({
+                pos: 'bottom-center',
+                showAction: false,
+                text: response.data.message,
+                duration: 5000
+            });
+        } catch(error) {
+            Snackbar.show({
+                pos: 'bottom-center',
+                showAction: false,
+                text: 'Something went wrong. Make sure that the details filled are correct and the resume is a PDF or Word file or try again later.',
+                duration: 5000
+            });
+            console.error(error);
+        }
+    });
+}
+
 function getInTouchSubmitHandler() {
     const get_in_touch_form = document.get_in_touch_form;
     get_in_touch_form.addEventListener('submit', async function(e) {
@@ -74,7 +109,7 @@ function getInTouchSubmitHandler() {
             });
             console.log(error);
         }
-    })
+    });
 }
 
 function newsltterSubmitHandler() {
@@ -181,6 +216,7 @@ Barba.Dispatcher.on('transitionCompleted', function() {
     if($('.working_with_us').length) {
         $('.nav a').css('color', '#fff');
         $('#nav > a:nth-child(5)').addClass('active-5');
+        workingWithUsSubmitHandler();
     }
 
     if($('.our_story').length) {

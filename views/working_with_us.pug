@@ -17,12 +17,12 @@ block content
         .hero_text--line
           span.small OF &nbsp;
           span.us US?
-      form.form(action='/working_with_us' name='working_with-us' method='POST' enctype='multipart/form-data')
+      form.form(action='/working_with_us' name='working_with_us' method='POST' enctype='multipart/form-data')
         .main_section
           | I <input type='text' name='name' id='name' required> WHO IS THE BEST AT <input type='text' name='interest' id='interest' required> WOULD LOVE TO MAKE EXCUSES, SPILL FOOD AND FIGHT OVER BEAN BAGS WITH ALL OF YOU. APART FROM THESE, I CAN WORK AND COME ON TIME. YOU'D BE CALLING ME ON <input type='text' name='number' id='number' required> AFTER I AM HIRED UNLESS YOU PREFER A MORE FANCY METHOD CALLED E-MAILING TO <input type='email' name='email' id='email' required>.
         .resume_section
           span HERE IS AN ORIGINAL RESUME FROM THE MANY I OWN.
           label(for='resume')
             | <span class='fake_btn'>UPLOAD</span>
-          input(type='file' name='resume' id='resume' value='UPLOAD' accept='application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document, image/jpeg, image/png, image/gif, application/pdf')
+          input(type='file' name='resume' id='resume' value='UPLOAD' accept='application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document, image/jpeg, image/png, image/gif, application/pdf' required)
         input.submit_section(type='submit' value='SUBMIT')
