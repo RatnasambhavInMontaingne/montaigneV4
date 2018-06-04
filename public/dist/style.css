@@ -435,7 +435,7 @@ template {
     text-align: center;
     text-decoration: none;
     font-size: 1.1em;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase; }
     .nav a svg {
       fill: currentColor; }
@@ -856,6 +856,10 @@ template {
             align-items: flex-end; }
         .our_story .content .team--info-body-left .last-name {
           margin-bottom: 0.3em; } }
+
+@media screen and (max-width: 380px) {
+  .content .team .team--info .team--info-body .team--info-body-left .first-name, .content .team .team--info .team--info-body .team--info-body-left .last-name {
+    font-size: 2.5em; } }
 
 .get_in_touch {
   font-family: 'IBM Plex Sans', sans-serif;
@@ -1287,6 +1291,18 @@ template {
     margin: 1em 0; }
   .working_with_us .form_section .form .resume_section label {
     margin-top: 0.3em; } }
+
+@media screen and (max-width: 450px) {
+  .excited {
+    font-size: 8em !important; }
+  .part, .us {
+    font-size: 10em !important; } }
+
+@media screen and (max-width: 365px) {
+  .excited {
+    font-size: 6em !important; }
+  .part, .us {
+    font-size: 7.2em !important; } }
 
 @font-face {
   font-family: BebasNeue;

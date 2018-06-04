@@ -225,3 +225,11 @@
     }
   }
 }
+
+@media screen and (max-width: 380px) {
+  .content .team .team--info .team--info-body .team--info-body-left {
+    .first-name, .last-name {
+      font-size: 2.5em;
+    }
+  }
+}

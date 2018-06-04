@@ -186,3 +186,21 @@
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  .excited {
+    font-size: 8em !important;
+  }
+  .part, .us {
+    font-size: 10em !important;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .excited {
+    font-size: 6em !important;
+  }
+  .part, .us {
+    font-size: 7.2em !important;
+  }
+}
