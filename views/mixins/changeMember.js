@@ -44,6 +44,22 @@ const memberDetails = [
         ]
     },
     {
+        firstName: 'Vamsi',
+        lastName: 'Konduri',
+        designation: 'Creative Designer',
+        details: 'A one-of-a-kind creative designer who makes eye-catching visuals of our ideas. He loves clicking and posing for photographs,is a foodie and competes with himself the most. Mark my words, The Vamsi-Bhushan duo are on your nerves all day.',
+        social: [
+            {
+                icon: 'Li',
+                href: 'https://www.linkedin.com/in/vamsi-konduri-02b94815a/'
+            },
+            {
+                icon: 'Tw',
+                href: 'https://twitter.com/vamsikrissh'
+            }
+        ]
+    },
+    {
         firstName: 'Ahmed',
         lastName: 'Aleemuddin',
         designation: 'Lead Developer',
@@ -52,22 +68,6 @@ const memberDetails = [
             {
                 icon: 'Li',
                 href: 'https://www.linkedin.com/in/ahmed-aleemuddin-2b5392117'
-            }
-        ]
-    },
-    {
-        firstName: 'Narendra',
-        lastName: 'Kumawat',
-        designation: 'Product Specialist',
-        details: 'The tech savvy geek who fits in perfectly despite being the calmest among the lot. Pro-active and focused, he strives to perform better and surpasses his own benchmarks.',
-        social: [
-            // {
-            //     icon: 'Github',
-            //     href: 'https://github.com/narendra-kumawat'
-            // },
-            {
-                icon: 'Li',
-                href: 'https://www.linkedin.com/in/narendra-kumawat-a1bb95100/'
             }
         ]
     },
@@ -104,18 +104,18 @@ const memberDetails = [
         ]
     },
     {
-        firstName: 'Vamsi',
-        lastName: 'Konduri',
-        designation: 'Creative Designer',
-        details: 'A one-of-a-kind creative designer who makes eye-catching visuals of our ideas. He loves clicking and posing for photographs,is a foodie and competes with himself the most. Mark my words, The Vamsi-Bhushan duo are on your nerves all day.',
+        firstName: 'Narendra',
+        lastName: 'Kumawat',
+        designation: 'Product Specialist',
+        details: 'The tech savvy geek who fits in perfectly despite being the calmest among the lot. Pro-active and focused, he strives to perform better and surpasses his own benchmarks.',
         social: [
+            // {
+            //     icon: 'Github',
+            //     href: 'https://github.com/narendra-kumawat'
+            // },
             {
                 icon: 'Li',
-                href: 'https://www.linkedin.com/in/vamsi-konduri-02b94815a/'
-            },
-            {
-                icon: 'Tw',
-                href: 'https://twitter.com/vamsikrissh'
+                href: 'https://www.linkedin.com/in/narendra-kumawat-a1bb95100/'
             }
         ]
     }
