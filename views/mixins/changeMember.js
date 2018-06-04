@@ -1,17 +1,5 @@
 const memberDetails = [
     {
-        firstName: 'Ananya',
-        lastName: 'Chandra',
-        designation: 'Content Engineer',
-        details: 'A get-it-done policy individual running forward in life to learn and grow more. By the way,she binge watches shows, sings and looks for excellent buffet places around.',
-        social: [
-            {
-                icon: 'Li',
-                href: 'https://www.linkedin.com/in/ananya-chalakani-981842143/'
-            }
-        ]
-    },
-    {
         firstName: 'Rohith',
         lastName: 'Sampathi',
         designation: 'CEO & Founder',
@@ -24,6 +12,46 @@ const memberDetails = [
             {
                 icon: 'Tw',
                 href: 'https://twitter.com/Rohith_Sampathi'
+            }
+        ]
+    },
+    {
+        firstName: 'Ahmed',
+        lastName: 'Aleemuddin',
+        designation: 'Lead Developer',
+        details: 'At Montaigne, a motivated Ahmed develops and manages designs and functionalities of websites and servers with his inner creativity and multitasking to create something out-of-the-box! The early bird,always sits on the bean bag,watches Mr.Bean and loves binging comedy shows.',
+        social: [
+            {
+                icon: 'Li',
+                href: 'https://www.linkedin.com/in/ahmed-aleemuddin-2b5392117'
+            }
+        ]
+    },
+    {
+        firstName: 'Ananya',
+        lastName: 'Chandra',
+        designation: 'Content Engineer',
+        details: 'A get-it-done policy individual running forward in life to learn and grow more. By the way,she binge watches shows, sings and looks for excellent buffet places around.',
+        social: [
+            {
+                icon: 'Li',
+                href: 'https://www.linkedin.com/in/ananya-chalakani-981842143/'
+            }
+        ]
+    },
+    {
+        firstName: 'Narendra',
+        lastName: 'Kumawat',
+        designation: 'Product Specialist',
+        details: 'The tech savy geek who fits in perfectly despite being the calmest among the lot. Pro-active and focused, he strives to perform better and surpasses his own benchmarks.',
+        social: [
+            {
+                icon: 'Github',
+                href: 'https://github.com/narendra-kumawat'
+            },
+            {
+                icon: 'Li',
+                href: 'https://www.linkedin.com/in/narendra-kumawat-a1bb95100/'
             }
         ]
     },
@@ -56,34 +84,6 @@ const memberDetails = [
         ]
     },
     {
-        firstName: 'Ahmed',
-        lastName: 'Aleemuddin',
-        designation: 'Lead Developer',
-        details: 'At Montaigne, a motivated Ahmed develops and manages designs and functionalities of websites and servers with his inner creativity and multitasking to create something out-of-the-box! The early bird,always sits on the bean bag,watches Mr.Bean and loves binging comedy shows.',
-        social: [
-            {
-                icon: 'Li',
-                href: 'https://www.linkedin.com/in/ahmed-aleemuddin-2b5392117'
-            }
-        ]
-    },
-    {
-        firstName: 'Narendra',
-        lastName: 'Kumawat',
-        designation: 'Product Specialist',
-        details: 'The tech savy geek who fits in perfectly despite being the calmest among the lot. Pro-active and focused, he strives to perform better and surpasses his own benchmarks.',
-        social: [
-            {
-                icon: 'Github',
-                href: 'https://github.com/narendra-kumawat'
-            },
-            {
-                icon: 'Li',
-                href: 'https://www.linkedin.com/in/narendra-kumawat-a1bb95100/'
-            }
-        ]
-    },
-    {
         firstName: 'Ratnasambhav',
         lastName: 'Priyadarshi',
         designation: 'Product Specialist',
@@ -91,7 +91,7 @@ const memberDetails = [
         social: [
             {
                 icon: 'Github',
-                href: 'https://github.com/Ratnasambhavs'
+                href: 'https://github.com/Ratnasambhav'
             },
             {
                 icon: 'Li',
@@ -116,10 +116,6 @@ const memberDetails = [
             {
                 icon: 'Tw',
                 href: 'https://twitter.com/vamsikrissh'
-            },
-            {
-                icon: 'Fb',
-                href: 'https://www.facebook.com/krisshfans'
             }
         ]
     }

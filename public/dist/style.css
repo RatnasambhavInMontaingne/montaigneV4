@@ -553,7 +553,6 @@ template {
   .skillset .section {
     height: 75vh;
     min-height: 435px;
-    max-height: 600px;
     display: -ms-flexbox;
     display: flex; }
     .skillset .section .image_section {
@@ -595,6 +594,7 @@ template {
       .skillset .section .text_section .link {
         font-size: 1.3em;
         text-decoration: none;
+        text-align: center;
         font-weight: 700;
         color: #000;
         border-bottom: 2px solid #000; }
@@ -646,14 +646,6 @@ template {
           order: 2;
       width: auto;
       padding: 2em 1em; } }
-
-@media screen and (max-width: 450px) {
-  .skillset .section .image_section .image {
-    background-attachment: fixed;
-    transition: none; }
-    .skillset .section .image_section .image:hover {
-      -ms-transform: none;
-          transform: none; } }
 
 .our_story {
   font-family: 'IBM Plex Sans', sans-serif; }
@@ -759,27 +751,27 @@ template {
           margin-left: 0; }
 
 #member-1-image {
-  background: url("/images/photos/teampics/ananya.jpg") center center;
-  background-size: cover; }
-
-#member-2-image {
   background: url("/images/photos/teampics/rohith.jpg") center center;
   background-size: cover; }
 
-#member-3-image {
-  background: url("/images/photos/teampics/bushan.jpg") center center;
-  background-size: cover; }
-
-#member-4-image {
-  background: url("/images/photos/teampics/nisha.jpg") center center;
-  background-size: cover; }
-
-#member-5-image {
+#member-2-image {
   background: url("/images/photos/teampics/ahmed.jpg") center center;
   background-size: cover; }
 
-#member-6-image {
+#member-3-image {
+  background: url("/images/photos/teampics/ananya.jpg") center center;
+  background-size: cover; }
+
+#member-4-image {
   background: url("/images/photos/teampics/narendra.jpg") center center;
+  background-size: cover; }
+
+#member-5-image {
+  background: url("/images/photos/teampics/bushan.jpg") center center;
+  background-size: cover; }
+
+#member-6-image {
+  background: url("/images/photos/teampics/nisha.jpg") center center;
   background-size: cover; }
 
 #member-7-image {
@@ -805,7 +797,7 @@ template {
   max-width: 40px; }
 
 .member-social a div.Github {
-  background: url("/images/icons/github.svg") center center;
+  background: url("/images/icons/github_icon.svg") center center;
   width: 40px;
   height: 40px;
   max-height: 40px;
