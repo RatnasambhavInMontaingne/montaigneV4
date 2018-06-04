@@ -152,6 +152,7 @@ Barba.Dispatcher.on('transitionCompleted', function() {
     if($('.blog_grid').length) {
         resizeAllAfterImageLoad();
         window.addEventListener("resize", resizeAllGridItems);
+        $('#nav > a:nth-child(3)').addClass('active-2');
     }
 
     if($('.skillset').length) {
@@ -164,7 +165,7 @@ Barba.Dispatcher.on('transitionCompleted', function() {
                 console.log($(this.getAttribute('href')));
             });
         });
-        // $('#nav > a:nth-child(2)').addClass('active-2');
+        $('#nav > a:nth-child(2)').addClass('active-2');
     }
 
     const get_in_touch_form = document.get_in_touch_form;
@@ -179,5 +180,9 @@ Barba.Dispatcher.on('transitionCompleted', function() {
     if($('.working_with_us').length) {
         $('.nav a').css('color', '#fff');
         $('#nav > a:nth-child(5)').addClass('active-5');
+    }
+
+    if($('.our_story').length) {
+        $('#nav > a:nth-child(4)').addClass('active-2');
     }
 });

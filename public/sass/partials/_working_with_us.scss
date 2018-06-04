@@ -3,6 +3,15 @@
   .top_section {
     background: url('/images/photos/wrkng-with-us.jpg') center center;
     background-size: cover;
+    .nav {
+      .nav_logo {
+        width: 30px !important;
+        height: 30px !important;
+        margin-right: 10px !important;
+        background: url('/images/icons/logo_small_white.png') center center no-repeat !important;
+        background-size: contain !important;
+      }
+    }
     .top_text {
       display: flex;
       justify-content: center;

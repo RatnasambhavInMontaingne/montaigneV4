@@ -233,3 +233,13 @@
     }
   }
 }
+
+@media screen and (max-width: 960px) {
+  .content .our_story .nav .nav_logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background: url('/images/icons/logo_small_black.png') center center no-repeat;
+    background-size: contain;
+  }
+}
