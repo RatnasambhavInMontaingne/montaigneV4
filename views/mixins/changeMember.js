@@ -45,10 +45,10 @@ const memberDetails = [
         designation: 'Product Specialist',
         details: 'The tech savy geek who fits in perfectly despite being the calmest among the lot. Pro-active and focused, he strives to perform better and surpasses his own benchmarks.',
         social: [
-            {
-                icon: 'Github',
-                href: 'https://github.com/narendra-kumawat'
-            },
+            // {
+            //     icon: 'Github',
+            //     href: 'https://github.com/narendra-kumawat'
+            // },
             {
                 icon: 'Li',
                 href: 'https://www.linkedin.com/in/narendra-kumawat-a1bb95100/'
@@ -89,10 +89,10 @@ const memberDetails = [
         designation: 'Product Specialist',
         details: 'Innovates, creates and perfects every product that Montaigne comes across. A gamer after  work, a music person and reads books once a while.',
         social: [
-            {
-                icon: 'Github',
-                href: 'https://github.com/Ratnasambhav'
-            },
+            // {
+            //     icon: 'Github',
+            //     href: 'https://github.com/Ratnasambhav'
+            // },
             {
                 icon: 'Li',
                 href: 'https://www.linkedin.com/in/ratnasambhav-priyadarshi-496b77108/'
