@@ -42,7 +42,7 @@ block content
               option(value='Other') Other
           .form--section.form--section-center
             textarea(name='message' id='message' rows='5' cols='35' placeholder='Enter your message')
-          .form--section.form--section-center
+          .form--section.form--section-center.form--section-submit
             input(type='submit' value='Submit')
       .newsletter_wrapper
         form.newsletter(action='/newsletter/subscribe' method='POST' enctype='multipart/form-data' name='newsletter_form')
