@@ -531,7 +531,14 @@ template {
   background-image: url("/images/photos/home-page-bg-2.jpg");
   background-size: cover;
   animation: bg-slide 400s linear infinite !important;
-  height: 100vh; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
   .home .content {
     display: -ms-flexbox;
     display: flex;
@@ -541,7 +548,7 @@ template {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    height: calc(100vh - 40px); }
+    min-height: calc(100vh - 40px); }
     .home .content p {
       font-size: 1.2em;
       color: #fff;
