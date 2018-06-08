@@ -1326,16 +1326,25 @@ template {
       .working_with_us .form_section .form .resume_section {
         margin-top: 1.5em;
         color: #3B3B3B;
-        font-weight: 700; }
+        font-weight: 700;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center; }
         .working_with_us .form_section .form .resume_section input {
           display: none; }
-        .working_with_us .form_section .form .resume_section .fake_btn {
-          margin-left: 0.3em;
-          padding: 0.2em 1em;
-          color: #fff;
-          background: #3B3B3B;
-          border: none;
-          border-radius: 5px; }
+        .working_with_us .form_section .form .resume_section label {
+          margin-top: 0.3em; }
+          .working_with_us .form_section .form .resume_section label .fake_btn {
+            padding: 0.2em 1em;
+            color: #fff;
+            background: #3B3B3B;
+            border: none;
+            border-radius: 5px; }
       .working_with_us .form_section .form .submit_section {
         font-family: BebasNeue, Helvetica, Arial, sans-serif;
         margin-top: 1.5em;
@@ -1375,10 +1384,6 @@ template {
     .working_with_us .form_section .hero_text {
       border-right: none;
       border-bottom: 10px solid #fff; } }
-
-@media screen and (max-width: 514px) {
-  .working_with_us .form_section .form .resume_section .fake_btn {
-    margin-left: 0.3em; } }
 
 @media screen and (max-width: 500px) {
   .working_with_us .top_section .top_text p {

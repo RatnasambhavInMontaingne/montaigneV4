@@ -93,16 +93,22 @@
         margin-top: 1.5em;
         color: #3B3B3B;
         font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
         input {
           display: none;
         }
-        .fake_btn {
-          margin-left: 0.3em;
-          padding: 0.2em 1em;
-          color: #fff;
-          background: #3B3B3B;
-          border: none;
-          border-radius: 5px;
+        label {
+          margin-top: 0.3em;
+          .fake_btn {
+            padding: 0.2em 1em;
+            color: #fff;
+            background: #3B3B3B;
+            border: none;
+            border-radius: 5px;
+          }
         }
       }
       .submit_section {
@@ -163,19 +169,19 @@
   }
 }
 
-@media screen and (max-width: 514px) {
-  .working_with_us {
-    .form_section {
-      .form {
-        .resume_section {
-          .fake_btn {
-            margin-left: 0.3em;
-          }
-        }
-      }
-    }
-  }
-}
+// @media screen and (max-width: 514px) {
+//   .working_with_us {
+//     .form_section {
+//       .form {
+//         .resume_section {
+//           span.text {
+//             margin-bottom: 0.3em;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 @media screen and (max-width: 500px) {
   .working_with_us {
