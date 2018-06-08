@@ -528,7 +528,7 @@ template {
 
 .home {
   font-family: 'IBM Plex Sans', sans-serif;
-  background-image: url("/images/photos/home-page-bg-2.jpg");
+  background-image: url("/images/photos/home-page-bg-1-black.jpg");
   background-size: cover;
   animation: bg-slide 400s linear infinite !important;
   display: -ms-flexbox;
@@ -734,7 +734,7 @@ template {
               -ms-writing-mode: tb-lr;
                   writing-mode: vertical-lr; }
       .our_story .content .team--info-body {
-        padding: 0 2em;
+        padding: 1em 2em;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: justify;
@@ -745,7 +745,8 @@ template {
             padding: 0;
             margin: 0;
             font-size: 3em;
-            font-weight: 700; }
+            font-weight: 700;
+            text-transform: uppercase; }
           .our_story .content .team--info-body-left .first-name {
             background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
             -webkit-background-clip: text;
@@ -754,7 +755,8 @@ template {
             margin-bottom: 0.2em; }
           .our_story .content .team--info-body-left .designation {
             font-size: 1.3em;
-            font-weight: 300; }
+            font-weight: 300;
+            margin-bottom: 0.5em; }
         .our_story .content .team--info-body-right {
           width: 60%;
           display: -ms-flexbox;
@@ -766,9 +768,10 @@ template {
           .our_story .content .team--info-body-right .details {
             text-align: justify;
             font-size: 1.4em;
-            line-height: 1.2; }
+            line-height: 1.2;
+            margin: 0; }
           .our_story .content .team--info-body-right .member-social {
-            margin-top: 1em;
+            margin-top: 0.5em;
             display: -ms-flexbox;
             display: flex; }
             .our_story .content .team--info-body-right .member-social a {
@@ -782,7 +785,7 @@ template {
       margin-bottom: 1em;
       width: 100%;
       height: 400px;
-      overflow-x: scroll;
+      overflow-y: scroll;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: row;
@@ -792,8 +795,7 @@ template {
       .our_story .content .team--slider .member-image {
         min-height: 400px;
         min-width: 300px;
-        margin: 1em;
-        background-size: cover;
+        margin: 0 1em;
         transition: border 0.25s linear; }
       .our_story .content .team--slider .member-image.active {
         border: 10px solid gold; }
@@ -861,13 +863,10 @@ template {
   max-width: 40px; }
 
 @media screen and (max-width: 750px) {
-  .our_story .content .top_section {
-    width: 100%; }
-    .our_story .content .top_section-text {
-      width: 90%;
-      font-size: 1.2em;
-      width: 100%;
-      margin: 1em 0.5em; } }
+  .our_story .content .top_section-text {
+    width: 95%;
+    font-size: 1.1em;
+    margin: 1em 0.5em; } }
 
 @media screen and (max-width: 850px) {
   .our_story .content .team--info {
@@ -878,14 +877,14 @@ template {
     -ms-flex-align: start;
         align-items: flex-start; }
     .our_story .content .team--info-header {
-      margin: 0.5em 0 2em 0; }
+      margin: 0 0 2em 0; }
       .our_story .content .team--info-header p {
         width: auto;
         -webkit-writing-mode: inherit;
             -ms-writing-mode: inherit;
                 writing-mode: inherit; }
     .our_story .content .team--info-body {
-      padding: 0 0.3em;
+      padding: 0 0.5em;
       width: 100%;
       -ms-flex-pack: center;
           justify-content: center;
@@ -897,7 +896,7 @@ template {
         width: 100%;
         margin-bottom: 1em; }
         .our_story .content .team--info-body-right .details {
-          text-align: left; }
+          text-align: justify; }
       .our_story .content .team--info-body-left {
         width: 100%;
         display: -ms-flexbox;
@@ -911,7 +910,8 @@ template {
 
 @media screen and (max-width: 380px) {
   .content .team .team--info .team--info-body .team--info-body-left .first-name, .content .team .team--info .team--info-body .team--info-body-left .last-name {
-    font-size: 2.5em; } }
+    font-size: 2.5em;
+    text-align: right; } }
 
 @media screen and (max-width: 960px) {
   .content .our_story .nav .nav_logo {
@@ -958,7 +958,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
       margin: 2em 0;
-      width: 60%; }
+      width: 45%; }
       .get_in_touch .contact_and_form_wrapper .form--section {
         display: -ms-flexbox;
         display: flex;
@@ -967,12 +967,13 @@ template {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         width: 100%;
-        margin-bottom: 3em; }
+        margin-bottom: 1.5em; }
         .get_in_touch .contact_and_form_wrapper .form--section input[type='text'], .get_in_touch .contact_and_form_wrapper .form--section input[type='email'], .get_in_touch .contact_and_form_wrapper .form--section select, .get_in_touch .contact_and_form_wrapper .form--section textarea {
           background: #193050;
           border: none;
           color: #fff;
-          padding: 0.5em; }
+          padding: 0.5em;
+          font-size: 0.8em; }
         .get_in_touch .contact_and_form_wrapper .form--section input[type='text'], .get_in_touch .contact_and_form_wrapper .form--section input[type='email'] {
           width: 45%;
           min-width: 250px;
@@ -984,7 +985,8 @@ template {
           -moz-appearance: none;
           appearance: none;
           border-radius: 20px;
-          text-align: center; }
+          text-align: center;
+          color: #8B929D; }
         .get_in_touch .contact_and_form_wrapper .form--section textarea {
           width: 100%;
           border-radius: 20px;
@@ -1001,6 +1003,10 @@ template {
               justify-content: center; }
         .get_in_touch .contact_and_form_wrapper .form--section-submit {
           margin-bottom: 0; }
+        .get_in_touch .contact_and_form_wrapper .form--section-title {
+          font-size: 1.3em;
+          font-weight: 700;
+          color: #fff; }
     .get_in_touch .contact_and_form_wrapper .horizontal_line {
       background-color: #F7D268;
       height: 3px;
