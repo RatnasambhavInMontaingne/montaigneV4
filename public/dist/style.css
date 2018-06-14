@@ -790,7 +790,8 @@ template {
       -ms-flex-direction: row;
           flex-direction: row;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+      overflow-y: scroll; }
       .our_story .content .team--slider .member-image {
         min-height: 400px;
         min-width: 300px;
